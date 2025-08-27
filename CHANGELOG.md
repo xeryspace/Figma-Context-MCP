@@ -1,5 +1,11 @@
 # figma-developer-mcp
 
+## 0.5.2
+
+### Patch Changes
+
+- [#227](https://github.com/GLips/Figma-Context-MCP/pull/227) [`68fbc87`](https://github.com/GLips/Figma-Context-MCP/commit/68fbc87645d25c57252d4d9bec5f43ee4238b09f) Thanks [@fightZy](https://github.com/fightZy)! - Update Node ID regex to support additional formats, e.g. multiple nodes.
+
 ## 0.5.1
 
 ### Patch Changes
