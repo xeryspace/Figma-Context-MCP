@@ -5,6 +5,7 @@ const parameters = {
   taskCode: z.string().describe(`The code of the task to get, e.g. "FRA-123"`),
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const parametersSchema = z.object(parameters);
 export type GetTaskParams = z.infer<typeof parametersSchema>;
 

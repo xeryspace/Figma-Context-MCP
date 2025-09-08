@@ -7,6 +7,7 @@ const parameters = {
     .describe(`The 2 to 5 letter code of the project to get tasks for, e.g. "FRA"`),
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const parametersSchema = z.object(parameters);
 export type GetTasksParams = z.infer<typeof parametersSchema>;
 

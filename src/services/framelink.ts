@@ -47,6 +47,7 @@ export class FramelinkService {
         ...options,
         headers: { ...this.getAuthHeaders(), ...options.headers },
       });
+      Logger.log(`Response: ${response.status} ${response.statusText}`);
 
       const error = await this.handleFetchError(response);
       if (error) return error;
@@ -67,7 +68,7 @@ export class FramelinkService {
    * Handle fetch errors by checking to see if the invalid response is an MCP-formatted error
    * and returning. Otherwise, throw a generic error.
    */
-  async handleFetchError(response: Response) {
+  async handleFetchError(response: Response): Promise<ToolResult | undefined> {
     if (!response.ok) {
       const errorMessage = JSON.parse(await response.text());
 

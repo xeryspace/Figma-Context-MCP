@@ -19,6 +19,7 @@ const parameters = {
   status: z.enum(["pending", "in-progress", "done"]).optional().describe("New status for the task"),
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const parametersSchema = z.object(parameters);
 export type UpdateTaskParams = z.infer<typeof parametersSchema>;
 
