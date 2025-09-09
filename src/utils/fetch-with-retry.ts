@@ -13,7 +13,10 @@ type RequestOptions = RequestInit & {
   headers?: Record<string, string>;
 };
 
-export async function fetchWithRetry<T>(url: string, options: RequestOptions = {}): Promise<T> {
+export async function fetchWithRetry<T extends { status?: number }>(
+  url: string,
+  options: RequestOptions = {},
+): Promise<T> {
   try {
     const response = await fetch(url, options);
 
@@ -58,7 +61,15 @@ export async function fetchWithRetry<T>(url: string, options: RequestOptions = {
         throw new Error("Curl command returned empty stdout.");
       }
 
-      return JSON.parse(stdout) as T;
+      const result = JSON.parse(stdout) as T;
+
+      // Successful Figma requests don't have a status property, and some endpoints return 200 with an
+      // error status in the body, e.g. https://www.figma.com/developers/api#get-images-endpoint
+      if (result.status && result.status !== 200) {
+        throw new Error(`Curl command failed: ${result}`);
+      }
+
+      return result;
     } catch (curlError: any) {
       Logger.error(`[fetchWithRetry] Curl fallback also failed for ${url}: ${curlError.message}`);
       // Re-throw the original fetch error to give context about the initial failure
