@@ -1,7 +1,7 @@
 {
   "name": "figma-developer-mcp",
   "version": "0.5.2",
-  "description": "Model Context Protocol server for Figma integration",
+  "description": "Give your coding agent access to your Figma data. Implement designs in any language or framework in one-shot.",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
