@@ -37,3 +37,6 @@ test-output
 # OS
 .DS_Store
 Thumbs.db
+
+# mcp-publisher CLI tool files
+.mcpregistry*

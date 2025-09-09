@@ -62,7 +62,9 @@ export class FigmaService {
       Logger.log(`Calling ${this.baseUrl}${endpoint}`);
       const headers = this.getAuthHeaders();
 
-      return await fetchWithRetry<T>(`${this.baseUrl}${endpoint}`, { headers });
+      return await fetchWithRetry<T & { status?: number }>(`${this.baseUrl}${endpoint}`, {
+        headers,
+      });
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : String(error);
       throw new Error(
@@ -152,8 +154,8 @@ export class FigmaService {
     options: { pngScale?: number; svgOptions?: SvgOptions } = {},
   ): Promise<ImageProcessingResult[]> {
     if (items.length === 0) return [];
-    
-    const sanitizedPath = path.normalize(localPath).replace(/^(\.\.(\/|\\|$))+/, '');
+
+    const sanitizedPath = path.normalize(localPath).replace(/^(\.\.(\/|\\|$))+/, "");
     const resolvedPath = path.resolve(sanitizedPath);
     if (!resolvedPath.startsWith(path.resolve(process.cwd()))) {
       throw new Error("Invalid path specified. Directory traversal is not allowed.");
