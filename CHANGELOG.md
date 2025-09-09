@@ -1,5 +1,11 @@
 # figma-developer-mcp
 
+## 0.6.0
+
+### Minor Changes
+
+- [#233](https://github.com/GLips/Figma-Context-MCP/pull/233) [`26a048b`](https://github.com/GLips/Figma-Context-MCP/commit/26a048bbd09db2b7e5265b5777609fb619617068) Thanks [@scarf005](https://github.com/scarf005)! - Return named styles from Figma instead of auto-generated IDs when they exist.
+
 ## 0.5.2
 
 ### Patch Changes
