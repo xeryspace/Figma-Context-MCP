@@ -15,8 +15,6 @@ FIGMA_API_KEY=your-figma-token
 FIGMA_OAUTH_TOKEN=your-oauth-token
 ```
 
-Run again with:
+Assets downloaded automatically into `462-164746/assets`.
 
-```
-node scripts/1-figma-crawl.js "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=462-164746&m=dev"
-```
+Run again with the same command if you need to refresh the data.

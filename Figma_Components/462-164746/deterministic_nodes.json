@@ -3,12 +3,14 @@
     "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=462-164746&m=dev",
     "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
     "rootNodeId": "462:164746",
-    "extractionDate": "2025-09-17T07:40:18.090Z",
+    "extractionDate": "2025-09-17T08:18:23.522Z",
     "totalNodes": 50,
     "maxDepth": 7,
     "tool": "1-figma-crawl.js",
-    "version": "1.0.0",
-    "method": "figma_service_depth_20"
+    "version": "1.1.0",
+    "method": "figma_service_depth_20",
+    "assetsDownloaded": 14,
+    "assetsDirectory": "462-164746/assets"
   },
   "nodes": [
     {
@@ -20,7 +22,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_9S0H9E",
+      "layout": "layout_0M2KOK",
       "effects": "Shadow"
     },
     {
@@ -32,7 +34,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_SWEFTL",
+      "layout": "layout_MRDLFI",
       "fills": "Base",
       "borderRadius": "16px 16px 0px 0px"
     },
@@ -45,7 +47,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 3,
-      "layout": "layout_CSGYSP"
+      "layout": "layout_USLAT7"
     },
     {
       "id": "I462:164746;255:6854;241:6616",
@@ -56,7 +58,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_45S98R"
+      "layout": "layout_BVR571"
     },
     {
       "id": "I462:164746;255:6854;241:6617",
@@ -67,7 +69,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_927L0S"
+      "layout": "layout_WIXJCG"
     },
     {
       "id": "I462:164746;255:6854;241:6617;60:335",
@@ -78,7 +80,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_7CO4UL"
+      "layout": "layout_N358QN"
     },
     {
       "id": "I462:164746;255:6854;241:6617;60:330",
@@ -89,8 +91,8 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_7CO4UL",
-      "fills": "fill_JFT98D"
+      "layout": "layout_N358QN",
+      "fills": "fill_5HNYOJ"
     },
     {
       "id": "I462:164746;255:6854;241:6617;60:334",
@@ -101,8 +103,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_NB6QWY",
-      "fills": "Text"
+      "layout": "layout_6WBFU3",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/dehaze.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 18,
+          "height": 14,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6618",
@@ -113,7 +125,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_21W6MQ"
+      "layout": "layout_BGHGA6"
     },
     {
       "id": "I462:164746;255:6854;241:6618;25:166",
@@ -124,9 +136,9 @@
       "text": "smartgoods",
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_A7PB0J",
+      "layout": "layout_RB2YTW",
       "fills": "Highlight",
-      "textStyle": "style_BCN5W4"
+      "textStyle": "style_BRJ5NP"
     },
     {
       "id": "I462:164746;255:6854;241:6618;25:167",
@@ -137,8 +149,18 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_F03UTY",
-      "fills": "Highlight"
+      "layout": "layout_3FHIZI",
+      "fills": "Highlight",
+      "assets": [
+        {
+          "path": "assets/union.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 32,
+          "height": 8,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6618;25:168",
@@ -149,8 +171,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_XQIP2U",
-      "fills": "fill_70YV7M"
+      "layout": "layout_1JOY3M",
+      "fills": "fill_5VTRIK",
+      "assets": [
+        {
+          "path": "assets/vector.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 29,
+          "height": 8,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6618;25:169",
@@ -161,8 +193,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_TNR8EK",
-      "fills": "fill_70YV7M"
+      "layout": "layout_CEAX58",
+      "fills": "fill_5VTRIK",
+      "assets": [
+        {
+          "path": "assets/vector-1.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 6,
+          "height": 7,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;244:6684",
@@ -173,7 +215,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_LSJ6OX"
+      "layout": "layout_HIL95G"
     },
     {
       "id": "I462:164746;255:6854;241:6624",
@@ -184,7 +226,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_TRAWD1",
+      "layout": "layout_E5N5YU",
       "effects": "Shadow",
       "strokes": "Text",
       "strokeWeight": "1px",
@@ -199,7 +241,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_45S98R"
+      "layout": "layout_BVR571"
     },
     {
       "id": "I462:164746;255:6854;241:6624;294:6841;198:5593",
@@ -210,7 +252,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_KCCIBC"
+      "layout": "layout_M4ORN9"
     },
     {
       "id": "I462:164746;255:6854;241:6624;294:6841;198:5593;2:8965",
@@ -221,9 +263,9 @@
       "text": "Suchen",
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_9K5ITF",
+      "layout": "layout_43WRC5",
       "fills": "Text",
-      "textStyle": "style_Q8JIS8"
+      "textStyle": "style_GTNNGW"
     },
     {
       "id": "I462:164746;255:6854;241:6624;60:440",
@@ -234,7 +276,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_927L0S"
+      "layout": "layout_WIXJCG"
     },
     {
       "id": "I462:164746;255:6854;241:6624;60:440;60:413",
@@ -245,7 +287,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_7CO4UL"
+      "layout": "layout_N358QN"
     },
     {
       "id": "I462:164746;255:6854;241:6624;60:440;60:408",
@@ -256,8 +298,8 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_7CO4UL",
-      "fills": "fill_JFT98D"
+      "layout": "layout_N358QN",
+      "fills": "fill_5HNYOJ"
     },
     {
       "id": "I462:164746;255:6854;241:6624;60:440;60:412",
@@ -268,8 +310,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_0ZG23Z",
-      "fills": "Text"
+      "layout": "layout_DAN37P",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/search.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 18,
+          "height": 18,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6619",
@@ -280,7 +332,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 3,
-      "layout": "layout_XGRDF5"
+      "layout": "layout_589JLS"
     },
     {
       "id": "I462:164746;255:6854;244:6742",
@@ -291,7 +343,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_927L0S"
+      "layout": "layout_WIXJCG"
     },
     {
       "id": "I462:164746;255:6854;244:6742;262:7295",
@@ -302,7 +354,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_7CO4UL"
+      "layout": "layout_N358QN"
     },
     {
       "id": "I462:164746;255:6854;244:6742;262:7290",
@@ -313,8 +365,8 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_7CO4UL",
-      "fills": "fill_JFT98D"
+      "layout": "layout_N358QN",
+      "fills": "fill_5HNYOJ"
     },
     {
       "id": "I462:164746;255:6854;244:6742;262:7294",
@@ -325,8 +377,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_6JHMHH",
-      "fills": "Text"
+      "layout": "layout_J47IM7",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/info.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 20,
+          "height": 20,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;244:6733",
@@ -337,7 +399,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_927L0S"
+      "layout": "layout_WIXJCG"
     },
     {
       "id": "I462:164746;255:6854;244:6733;60:341",
@@ -348,7 +410,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_7CO4UL"
+      "layout": "layout_N358QN"
     },
     {
       "id": "I462:164746;255:6854;244:6733;60:336",
@@ -359,8 +421,8 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_7CO4UL",
-      "fills": "fill_JFT98D"
+      "layout": "layout_N358QN",
+      "fills": "fill_5HNYOJ"
     },
     {
       "id": "I462:164746;255:6854;244:6733;60:340",
@@ -371,8 +433,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_8XFYQU",
-      "fills": "Text"
+      "layout": "layout_G33LGK",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/person.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 16,
+          "height": 16,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6621",
@@ -383,7 +455,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_2JCNIB"
+      "layout": "layout_XUW47A"
     },
     {
       "id": "I462:164746;255:6854;241:6622",
@@ -394,7 +466,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_927L0S"
+      "layout": "layout_WIXJCG"
     },
     {
       "id": "I462:164746;255:6854;241:6622;60:393",
@@ -405,7 +477,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_7CO4UL"
+      "layout": "layout_N358QN"
     },
     {
       "id": "I462:164746;255:6854;241:6622;60:388",
@@ -416,8 +488,8 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_7CO4UL",
-      "fills": "fill_JFT98D"
+      "layout": "layout_N358QN",
+      "fills": "fill_5HNYOJ"
     },
     {
       "id": "I462:164746;255:6854;241:6622;60:392",
@@ -428,8 +500,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_OGXF95",
-      "fills": "Text"
+      "layout": "layout_R31CS4",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/shopping-cart.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 20,
+          "height": 20,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6854;241:6623",
@@ -440,7 +522,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_S1BC1L",
+      "layout": "layout_1OPZ5P",
       "borderRadius": "6px"
     },
     {
@@ -452,7 +534,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_CQ3LAV"
+      "layout": "layout_P02JFS"
     },
     {
       "id": "I462:164746;255:6854;241:6623;60:472;2:8895",
@@ -463,9 +545,9 @@
       "text": "0",
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_9K5ITF",
+      "layout": "layout_43WRC5",
       "fills": "Selection",
-      "textStyle": "style_O2QUR5"
+      "textStyle": "style_2GR9QS"
     },
     {
       "id": "I462:164746;255:6996",
@@ -476,7 +558,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_MXER8Y",
+      "layout": "layout_XISCR8",
       "fills": "Verlauf 2",
       "borderRadius": "0px 0px 16px 16px"
     },
@@ -489,8 +571,8 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_TYEOUY",
-      "effects": "effect_1TUASN"
+      "layout": "layout_LEUTSV",
+      "effects": "effect_S1BR8N"
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5966",
@@ -501,8 +583,18 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_87WCYF",
-      "fills": "Base"
+      "layout": "layout_KSMGR9",
+      "fills": "Base",
+      "assets": [
+        {
+          "path": "assets/union-1.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 18,
+          "height": 15,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5967",
@@ -513,7 +605,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_YSG7MW"
+      "layout": "layout_VAI4W5"
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5968",
@@ -524,8 +616,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_EHJP5L",
-      "fills": "Text"
+      "layout": "layout_G71KTM",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/vector-2.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 9,
+          "height": 9,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5969",
@@ -536,8 +638,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_OV50E9",
-      "fills": "Text"
+      "layout": "layout_N1I6WI",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/vector-3.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 9,
+          "height": 9,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5970",
@@ -548,8 +660,18 @@
       "text": null,
       "hasChildren": true,
       "childCount": 2,
-      "layout": "layout_MS01VB",
-      "fills": "Text"
+      "layout": "layout_6PA3XT",
+      "fills": "Text",
+      "assets": [
+        {
+          "path": "assets/union-2.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 18,
+          "height": 5,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5971",
@@ -560,8 +682,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_R2PZ9Y",
-      "fills": "fill_70YV7M"
+      "layout": "layout_29MSSO",
+      "fills": "fill_5VTRIK",
+      "assets": [
+        {
+          "path": "assets/vector-4.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 17,
+          "height": 5,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6966;219:5972",
@@ -572,8 +704,18 @@
       "text": null,
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_B1IKXT",
-      "fills": "fill_70YV7M"
+      "layout": "layout_WZ51UF",
+      "fills": "fill_5VTRIK",
+      "assets": [
+        {
+          "path": "assets/vector-5.svg",
+          "type": "render",
+          "usage": "img",
+          "width": 4,
+          "height": 4,
+          "wasCropped": false
+        }
+      ]
     },
     {
       "id": "I462:164746;255:6996;255:6967",
@@ -584,7 +726,7 @@
       "text": null,
       "hasChildren": true,
       "childCount": 1,
-      "layout": "layout_KCCIBC"
+      "layout": "layout_M4ORN9"
     },
     {
       "id": "I462:164746;255:6996;255:6967;2:8965",
@@ -595,9 +737,9 @@
       "text": "Smarte GOODIES. Smart erklärt. Deine Extras. Deine Wahl.",
       "hasChildren": false,
       "childCount": 0,
-      "layout": "layout_9K5ITF",
+      "layout": "layout_43WRC5",
       "fills": "Base",
-      "textStyle": "style_OH4M2Q"
+      "textStyle": "style_CKWTCO"
     }
   ],
   "simplified": {
@@ -609,7 +751,7 @@
         "id": "462:164746",
         "name": "Component 4",
         "type": "INSTANCE",
-        "layout": "layout_9S0H9E",
+        "layout": "layout_0M2KOK",
         "effects": "Shadow",
         "componentId": "634:92992",
         "componentProperties": [
@@ -624,7 +766,7 @@
             "id": "I462:164746;255:6854",
             "name": "Frame 2147236913",
             "type": "INSTANCE",
-            "layout": "layout_SWEFTL",
+            "layout": "layout_MRDLFI",
             "fills": "Base",
             "borderRadius": "16px 16px 0px 0px",
             "componentId": "634:92950",
@@ -640,19 +782,19 @@
                 "id": "I462:164746;255:6854;241:6615",
                 "name": "Frame 2147236917",
                 "type": "FRAME",
-                "layout": "layout_CSGYSP",
+                "layout": "layout_USLAT7",
                 "children": [
                   {
                     "id": "I462:164746;255:6854;241:6616",
                     "name": "Frame 2147236919",
                     "type": "FRAME",
-                    "layout": "layout_45S98R",
+                    "layout": "layout_BVR571",
                     "children": [
                       {
                         "id": "I462:164746;255:6854;241:6617",
                         "name": "Menu",
                         "type": "INSTANCE",
-                        "layout": "layout_927L0S",
+                        "layout": "layout_WIXJCG",
                         "componentId": "634:92693",
                         "componentProperties": [
                           {
@@ -666,21 +808,31 @@
                             "id": "I462:164746;255:6854;241:6617;60:335",
                             "name": "dehaze",
                             "type": "GROUP",
-                            "layout": "layout_7CO4UL",
+                            "layout": "layout_N358QN",
                             "children": [
                               {
                                 "id": "I462:164746;255:6854;241:6617;60:330",
                                 "name": "Bounding box",
                                 "type": "RECTANGLE",
-                                "layout": "layout_7CO4UL",
-                                "fills": "fill_JFT98D"
+                                "layout": "layout_N358QN",
+                                "fills": "fill_5HNYOJ"
                               },
                               {
                                 "id": "I462:164746;255:6854;241:6617;60:334",
                                 "name": "dehaze",
                                 "type": "IMAGE-SVG",
-                                "layout": "layout_NB6QWY",
-                                "fills": "Text"
+                                "layout": "layout_6WBFU3",
+                                "fills": "Text",
+                                "assets": [
+                                  {
+                                    "path": "assets/dehaze.svg",
+                                    "type": "render",
+                                    "usage": "img",
+                                    "width": 18,
+                                    "height": 14,
+                                    "wasCropped": false
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -690,7 +842,7 @@
                         "id": "I462:164746;255:6854;241:6618",
                         "name": "Logos",
                         "type": "INSTANCE",
-                        "layout": "layout_21W6MQ",
+                        "layout": "layout_BGHGA6",
                         "componentId": "389:47691",
                         "componentProperties": [
                           {
@@ -704,31 +856,61 @@
                             "id": "I462:164746;255:6854;241:6618;25:166",
                             "name": "smartgoods",
                             "type": "TEXT",
-                            "layout": "layout_A7PB0J",
+                            "layout": "layout_RB2YTW",
                             "text": "smartgoods",
-                            "textStyle": "style_BCN5W4",
+                            "textStyle": "style_BRJ5NP",
                             "fills": "Highlight"
                           },
                           {
                             "id": "I462:164746;255:6854;241:6618;25:167",
                             "name": "Union",
                             "type": "BOOLEAN_OPERATION",
-                            "layout": "layout_F03UTY",
+                            "layout": "layout_3FHIZI",
                             "fills": "Highlight",
                             "children": [
                               {
                                 "id": "I462:164746;255:6854;241:6618;25:168",
                                 "name": "Vector",
                                 "type": "IMAGE-SVG",
-                                "layout": "layout_XQIP2U",
-                                "fills": "fill_70YV7M"
+                                "layout": "layout_1JOY3M",
+                                "fills": "fill_5VTRIK",
+                                "assets": [
+                                  {
+                                    "path": "assets/vector.svg",
+                                    "type": "render",
+                                    "usage": "img",
+                                    "width": 29,
+                                    "height": 8,
+                                    "wasCropped": false
+                                  }
+                                ]
                               },
                               {
                                 "id": "I462:164746;255:6854;241:6618;25:169",
                                 "name": "Vector",
                                 "type": "IMAGE-SVG",
-                                "layout": "layout_TNR8EK",
-                                "fills": "fill_70YV7M"
+                                "layout": "layout_CEAX58",
+                                "fills": "fill_5VTRIK",
+                                "assets": [
+                                  {
+                                    "path": "assets/vector-1.svg",
+                                    "type": "render",
+                                    "usage": "img",
+                                    "width": 6,
+                                    "height": 7,
+                                    "wasCropped": false
+                                  }
+                                ]
+                              }
+                            ],
+                            "assets": [
+                              {
+                                "path": "assets/union.svg",
+                                "type": "render",
+                                "usage": "img",
+                                "width": 32,
+                                "height": 8,
+                                "wasCropped": false
                               }
                             ]
                           }
@@ -740,13 +922,13 @@
                     "id": "I462:164746;255:6854;244:6684",
                     "name": "Frame 2147237043",
                     "type": "FRAME",
-                    "layout": "layout_LSJ6OX",
+                    "layout": "layout_HIL95G",
                     "children": [
                       {
                         "id": "I462:164746;255:6854;241:6624",
                         "name": "Typography",
                         "type": "INSTANCE",
-                        "layout": "layout_TRAWD1",
+                        "layout": "layout_E5N5YU",
                         "strokes": "Text",
                         "strokeWeight": "1px",
                         "effects": "Shadow",
@@ -774,7 +956,7 @@
                             "id": "I462:164746;255:6854;241:6624;294:6841",
                             "name": "TextIconCombination",
                             "type": "INSTANCE",
-                            "layout": "layout_45S98R",
+                            "layout": "layout_BVR571",
                             "componentId": "359:88571",
                             "componentProperties": [
                               {
@@ -798,7 +980,7 @@
                                 "id": "I462:164746;255:6854;241:6624;294:6841;198:5593",
                                 "name": "Typography",
                                 "type": "INSTANCE",
-                                "layout": "layout_KCCIBC",
+                                "layout": "layout_M4ORN9",
                                 "componentId": "291:42371",
                                 "componentProperties": [
                                   {
@@ -812,9 +994,9 @@
                                     "id": "I462:164746;255:6854;241:6624;294:6841;198:5593;2:8965",
                                     "name": "Typography",
                                     "type": "TEXT",
-                                    "layout": "layout_9K5ITF",
+                                    "layout": "layout_43WRC5",
                                     "text": "Suchen",
-                                    "textStyle": "style_Q8JIS8",
+                                    "textStyle": "style_GTNNGW",
                                     "fills": "Text"
                                   }
                                 ]
@@ -825,7 +1007,7 @@
                             "id": "I462:164746;255:6854;241:6624;60:440",
                             "name": "Menu",
                             "type": "INSTANCE",
-                            "layout": "layout_927L0S",
+                            "layout": "layout_WIXJCG",
                             "componentId": "634:92698",
                             "componentProperties": [
                               {
@@ -839,21 +1021,31 @@
                                 "id": "I462:164746;255:6854;241:6624;60:440;60:413",
                                 "name": "search",
                                 "type": "GROUP",
-                                "layout": "layout_7CO4UL",
+                                "layout": "layout_N358QN",
                                 "children": [
                                   {
                                     "id": "I462:164746;255:6854;241:6624;60:440;60:408",
                                     "name": "Bounding box",
                                     "type": "RECTANGLE",
-                                    "layout": "layout_7CO4UL",
-                                    "fills": "fill_JFT98D"
+                                    "layout": "layout_N358QN",
+                                    "fills": "fill_5HNYOJ"
                                   },
                                   {
                                     "id": "I462:164746;255:6854;241:6624;60:440;60:412",
                                     "name": "search",
                                     "type": "IMAGE-SVG",
-                                    "layout": "layout_0ZG23Z",
-                                    "fills": "Text"
+                                    "layout": "layout_DAN37P",
+                                    "fills": "Text",
+                                    "assets": [
+                                      {
+                                        "path": "assets/search.svg",
+                                        "type": "render",
+                                        "usage": "img",
+                                        "width": 18,
+                                        "height": 18,
+                                        "wasCropped": false
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -867,13 +1059,13 @@
                     "id": "I462:164746;255:6854;241:6619",
                     "name": "Frame 2147236918",
                     "type": "FRAME",
-                    "layout": "layout_XGRDF5",
+                    "layout": "layout_589JLS",
                     "children": [
                       {
                         "id": "I462:164746;255:6854;244:6742",
                         "name": "Menu",
                         "type": "INSTANCE",
-                        "layout": "layout_927L0S",
+                        "layout": "layout_WIXJCG",
                         "componentId": "634:92700",
                         "componentProperties": [
                           {
@@ -887,21 +1079,31 @@
                             "id": "I462:164746;255:6854;244:6742;262:7295",
                             "name": "info",
                             "type": "GROUP",
-                            "layout": "layout_7CO4UL",
+                            "layout": "layout_N358QN",
                             "children": [
                               {
                                 "id": "I462:164746;255:6854;244:6742;262:7290",
                                 "name": "Bounding box",
                                 "type": "RECTANGLE",
-                                "layout": "layout_7CO4UL",
-                                "fills": "fill_JFT98D"
+                                "layout": "layout_N358QN",
+                                "fills": "fill_5HNYOJ"
                               },
                               {
                                 "id": "I462:164746;255:6854;244:6742;262:7294",
                                 "name": "info",
                                 "type": "IMAGE-SVG",
-                                "layout": "layout_6JHMHH",
-                                "fills": "Text"
+                                "layout": "layout_J47IM7",
+                                "fills": "Text",
+                                "assets": [
+                                  {
+                                    "path": "assets/info.svg",
+                                    "type": "render",
+                                    "usage": "img",
+                                    "width": 20,
+                                    "height": 20,
+                                    "wasCropped": false
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -911,7 +1113,7 @@
                         "id": "I462:164746;255:6854;244:6733",
                         "name": "Menu",
                         "type": "INSTANCE",
-                        "layout": "layout_927L0S",
+                        "layout": "layout_WIXJCG",
                         "componentId": "634:92694",
                         "componentProperties": [
                           {
@@ -925,21 +1127,31 @@
                             "id": "I462:164746;255:6854;244:6733;60:341",
                             "name": "person",
                             "type": "GROUP",
-                            "layout": "layout_7CO4UL",
+                            "layout": "layout_N358QN",
                             "children": [
                               {
                                 "id": "I462:164746;255:6854;244:6733;60:336",
                                 "name": "Bounding box",
                                 "type": "RECTANGLE",
-                                "layout": "layout_7CO4UL",
-                                "fills": "fill_JFT98D"
+                                "layout": "layout_N358QN",
+                                "fills": "fill_5HNYOJ"
                               },
                               {
                                 "id": "I462:164746;255:6854;244:6733;60:340",
                                 "name": "person",
                                 "type": "IMAGE-SVG",
-                                "layout": "layout_8XFYQU",
-                                "fills": "Text"
+                                "layout": "layout_G33LGK",
+                                "fills": "Text",
+                                "assets": [
+                                  {
+                                    "path": "assets/person.svg",
+                                    "type": "render",
+                                    "usage": "img",
+                                    "width": 16,
+                                    "height": 16,
+                                    "wasCropped": false
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -949,13 +1161,13 @@
                         "id": "I462:164746;255:6854;241:6621",
                         "name": "Frame 2147236915",
                         "type": "FRAME",
-                        "layout": "layout_2JCNIB",
+                        "layout": "layout_XUW47A",
                         "children": [
                           {
                             "id": "I462:164746;255:6854;241:6622",
                             "name": "Menu",
                             "type": "INSTANCE",
-                            "layout": "layout_927L0S",
+                            "layout": "layout_WIXJCG",
                             "componentId": "634:92696",
                             "componentProperties": [
                               {
@@ -969,21 +1181,31 @@
                                 "id": "I462:164746;255:6854;241:6622;60:393",
                                 "name": "shopping_cart",
                                 "type": "GROUP",
-                                "layout": "layout_7CO4UL",
+                                "layout": "layout_N358QN",
                                 "children": [
                                   {
                                     "id": "I462:164746;255:6854;241:6622;60:388",
                                     "name": "Bounding box",
                                     "type": "RECTANGLE",
-                                    "layout": "layout_7CO4UL",
-                                    "fills": "fill_JFT98D"
+                                    "layout": "layout_N358QN",
+                                    "fills": "fill_5HNYOJ"
                                   },
                                   {
                                     "id": "I462:164746;255:6854;241:6622;60:392",
                                     "name": "shopping_cart",
                                     "type": "IMAGE-SVG",
-                                    "layout": "layout_OGXF95",
-                                    "fills": "Text"
+                                    "layout": "layout_R31CS4",
+                                    "fills": "Text",
+                                    "assets": [
+                                      {
+                                        "path": "assets/shopping-cart.svg",
+                                        "type": "render",
+                                        "usage": "img",
+                                        "width": 20,
+                                        "height": 20,
+                                        "wasCropped": false
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -993,7 +1215,7 @@
                             "id": "I462:164746;255:6854;241:6623",
                             "name": "Numbers",
                             "type": "INSTANCE",
-                            "layout": "layout_S1BC1L",
+                            "layout": "layout_1OPZ5P",
                             "borderRadius": "6px",
                             "componentId": "291:42677",
                             "componentProperties": [
@@ -1008,7 +1230,7 @@
                                 "id": "I462:164746;255:6854;241:6623;60:472",
                                 "name": "Typography",
                                 "type": "INSTANCE",
-                                "layout": "layout_CQ3LAV",
+                                "layout": "layout_P02JFS",
                                 "componentId": "291:42368",
                                 "componentProperties": [
                                   {
@@ -1022,9 +1244,9 @@
                                     "id": "I462:164746;255:6854;241:6623;60:472;2:8895",
                                     "name": "Typography",
                                     "type": "TEXT",
-                                    "layout": "layout_9K5ITF",
+                                    "layout": "layout_43WRC5",
                                     "text": "0",
-                                    "textStyle": "style_O2QUR5",
+                                    "textStyle": "style_2GR9QS",
                                     "fills": "Selection"
                                   }
                                 ]
@@ -1043,7 +1265,7 @@
             "id": "I462:164746;255:6996",
             "name": "MenüGoodiesLeiste",
             "type": "INSTANCE",
-            "layout": "layout_MXER8Y",
+            "layout": "layout_XISCR8",
             "fills": "Verlauf 2",
             "borderRadius": "0px 0px 16px 16px",
             "componentId": "462:161233",
@@ -1059,8 +1281,8 @@
                 "id": "I462:164746;255:6996;255:6966",
                 "name": "Logos",
                 "type": "INSTANCE",
-                "layout": "layout_TYEOUY",
-                "effects": "effect_1TUASN",
+                "layout": "layout_LEUTSV",
+                "effects": "effect_S1BR8N",
                 "componentId": "389:47697",
                 "componentProperties": [
                   {
@@ -1074,28 +1296,48 @@
                     "id": "I462:164746;255:6996;255:6966;219:5966",
                     "name": "Union",
                     "type": "BOOLEAN_OPERATION",
-                    "layout": "layout_87WCYF",
+                    "layout": "layout_KSMGR9",
                     "fills": "Base",
                     "children": [
                       {
                         "id": "I462:164746;255:6996;255:6966;219:5967",
                         "name": "oo",
                         "type": "GROUP",
-                        "layout": "layout_YSG7MW",
+                        "layout": "layout_VAI4W5",
                         "children": [
                           {
                             "id": "I462:164746;255:6996;255:6966;219:5968",
                             "name": "Vector",
                             "type": "IMAGE-SVG",
-                            "layout": "layout_EHJP5L",
-                            "fills": "Text"
+                            "layout": "layout_G71KTM",
+                            "fills": "Text",
+                            "assets": [
+                              {
+                                "path": "assets/vector-2.svg",
+                                "type": "render",
+                                "usage": "img",
+                                "width": 9,
+                                "height": 9,
+                                "wasCropped": false
+                              }
+                            ]
                           },
                           {
                             "id": "I462:164746;255:6996;255:6966;219:5969",
                             "name": "Vector",
                             "type": "IMAGE-SVG",
-                            "layout": "layout_OV50E9",
-                            "fills": "Text"
+                            "layout": "layout_N1I6WI",
+                            "fills": "Text",
+                            "assets": [
+                              {
+                                "path": "assets/vector-3.svg",
+                                "type": "render",
+                                "usage": "img",
+                                "width": 9,
+                                "height": 9,
+                                "wasCropped": false
+                              }
+                            ]
                           }
                         ]
                       },
@@ -1103,24 +1345,64 @@
                         "id": "I462:164746;255:6996;255:6966;219:5970",
                         "name": "Union",
                         "type": "BOOLEAN_OPERATION",
-                        "layout": "layout_MS01VB",
+                        "layout": "layout_6PA3XT",
                         "fills": "Text",
                         "children": [
                           {
                             "id": "I462:164746;255:6996;255:6966;219:5971",
                             "name": "Vector",
                             "type": "IMAGE-SVG",
-                            "layout": "layout_R2PZ9Y",
-                            "fills": "fill_70YV7M"
+                            "layout": "layout_29MSSO",
+                            "fills": "fill_5VTRIK",
+                            "assets": [
+                              {
+                                "path": "assets/vector-4.svg",
+                                "type": "render",
+                                "usage": "img",
+                                "width": 17,
+                                "height": 5,
+                                "wasCropped": false
+                              }
+                            ]
                           },
                           {
                             "id": "I462:164746;255:6996;255:6966;219:5972",
                             "name": "Vector",
                             "type": "IMAGE-SVG",
-                            "layout": "layout_B1IKXT",
-                            "fills": "fill_70YV7M"
+                            "layout": "layout_WZ51UF",
+                            "fills": "fill_5VTRIK",
+                            "assets": [
+                              {
+                                "path": "assets/vector-5.svg",
+                                "type": "render",
+                                "usage": "img",
+                                "width": 4,
+                                "height": 4,
+                                "wasCropped": false
+                              }
+                            ]
+                          }
+                        ],
+                        "assets": [
+                          {
+                            "path": "assets/union-2.svg",
+                            "type": "render",
+                            "usage": "img",
+                            "width": 18,
+                            "height": 5,
+                            "wasCropped": false
                           }
                         ]
+                      }
+                    ],
+                    "assets": [
+                      {
+                        "path": "assets/union-1.svg",
+                        "type": "render",
+                        "usage": "img",
+                        "width": 18,
+                        "height": 15,
+                        "wasCropped": false
                       }
                     ]
                   }
@@ -1130,7 +1412,7 @@
                 "id": "I462:164746;255:6996;255:6967",
                 "name": "Typography",
                 "type": "INSTANCE",
-                "layout": "layout_KCCIBC",
+                "layout": "layout_M4ORN9",
                 "componentId": "291:42371",
                 "componentProperties": [
                   {
@@ -1144,9 +1426,9 @@
                     "id": "I462:164746;255:6996;255:6967;2:8965",
                     "name": "Typography",
                     "type": "TEXT",
-                    "layout": "layout_9K5ITF",
+                    "layout": "layout_43WRC5",
                     "text": "Smarte GOODIES. Smart erklärt. Deine Extras. Deine Wahl.",
-                    "textStyle": "style_OH4M2Q",
+                    "textStyle": "style_CKWTCO",
                     "fills": "Base"
                   }
                 ]
@@ -1318,7 +1600,7 @@
     },
     "globalVars": {
       "styles": {
-        "layout_9S0H9E": {
+        "layout_0M2KOK": {
           "mode": "column",
           "alignItems": "center",
           "sizing": {
@@ -1332,7 +1614,7 @@
         "Shadow": {
           "boxShadow": "0px 6px 12px 0px rgba(0, 0, 0, 0.03), 0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
         },
-        "layout_SWEFTL": {
+        "layout_MRDLFI": {
           "mode": "column",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1347,7 +1629,7 @@
         "Base": [
           "#FFFFFF"
         ],
-        "layout_CSGYSP": {
+        "layout_USLAT7": {
           "mode": "row",
           "justifyContent": "space-between",
           "alignItems": "center",
@@ -1358,7 +1640,7 @@
             "vertical": "hug"
           }
         },
-        "layout_45S98R": {
+        "layout_BVR571": {
           "mode": "row",
           "alignItems": "center",
           "gap": "16px",
@@ -1367,7 +1649,7 @@
             "vertical": "hug"
           }
         },
-        "layout_927L0S": {
+        "layout_WIXJCG": {
           "mode": "none",
           "sizing": {
             "horizontal": "fixed",
@@ -1378,7 +1660,7 @@
             "height": 24
           }
         },
-        "layout_7CO4UL": {
+        "layout_N358QN": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1390,10 +1672,10 @@
             "height": 24
           }
         },
-        "fill_JFT98D": [
+        "fill_5HNYOJ": [
           "#D9D9D9"
         ],
-        "layout_NB6QWY": {
+        "layout_6WBFU3": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1408,7 +1690,7 @@
         "Text": [
           "#151515"
         ],
-        "layout_21W6MQ": {
+        "layout_BGHGA6": {
           "mode": "none",
           "sizing": {
             "horizontal": "fixed",
@@ -1419,7 +1701,7 @@
             "height": 30
           }
         },
-        "layout_A7PB0J": {
+        "layout_RB2YTW": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1431,7 +1713,7 @@
             "height": 19
           }
         },
-        "style_BCN5W4": {
+        "style_BRJ5NP": {
           "fontFamily": "Inter",
           "fontWeight": 700,
           "fontSize": 26.549171447753906,
@@ -1442,7 +1724,7 @@
         "Highlight": [
           "#DE5A13"
         ],
-        "layout_F03UTY": {
+        "layout_3FHIZI": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1454,7 +1736,7 @@
             "height": 7.43
           }
         },
-        "layout_XQIP2U": {
+        "layout_1JOY3M": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1462,10 +1744,10 @@
             "height": 7.43
           }
         },
-        "fill_70YV7M": [
+        "fill_5VTRIK": [
           "#FF6A00"
         ],
-        "layout_TNR8EK": {
+        "layout_CEAX58": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1473,7 +1755,7 @@
             "height": 6.61
           }
         },
-        "layout_LSJ6OX": {
+        "layout_HIL95G": {
           "mode": "column",
           "gap": "10px",
           "padding": "0px 24px",
@@ -1482,7 +1764,7 @@
             "vertical": "hug"
           }
         },
-        "layout_TRAWD1": {
+        "layout_E5N5YU": {
           "mode": "row",
           "justifyContent": "space-between",
           "alignItems": "center",
@@ -1494,7 +1776,7 @@
             "vertical": "fixed"
           }
         },
-        "layout_KCCIBC": {
+        "layout_M4ORN9": {
           "mode": "row",
           "alignItems": "center",
           "gap": "10px",
@@ -1503,14 +1785,14 @@
             "vertical": "hug"
           }
         },
-        "layout_9K5ITF": {
+        "layout_43WRC5": {
           "mode": "none",
           "sizing": {
             "horizontal": "hug",
             "vertical": "hug"
           }
         },
-        "style_Q8JIS8": {
+        "style_GTNNGW": {
           "fontFamily": "Inter",
           "fontWeight": 500,
           "fontSize": 16,
@@ -1518,7 +1800,7 @@
           "textAlignHorizontal": "LEFT",
           "textAlignVertical": "TOP"
         },
-        "layout_0ZG23Z": {
+        "layout_DAN37P": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1530,7 +1812,7 @@
             "height": 18
           }
         },
-        "layout_XGRDF5": {
+        "layout_589JLS": {
           "mode": "row",
           "justifyContent": "flex-end",
           "alignItems": "center",
@@ -1540,7 +1822,7 @@
             "vertical": "hug"
           }
         },
-        "layout_6JHMHH": {
+        "layout_J47IM7": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1552,7 +1834,7 @@
             "height": 20
           }
         },
-        "layout_8XFYQU": {
+        "layout_G33LGK": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1564,7 +1846,7 @@
             "height": 16
           }
         },
-        "layout_2JCNIB": {
+        "layout_XUW47A": {
           "mode": "row",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1573,7 +1855,7 @@
             "vertical": "hug"
           }
         },
-        "layout_OGXF95": {
+        "layout_R31CS4": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1585,7 +1867,7 @@
             "height": 20
           }
         },
-        "layout_S1BC1L": {
+        "layout_1OPZ5P": {
           "mode": "row",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1600,7 +1882,7 @@
             "height": 12
           }
         },
-        "layout_CQ3LAV": {
+        "layout_P02JFS": {
           "mode": "row",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1610,7 +1892,7 @@
             "vertical": "hug"
           }
         },
-        "style_O2QUR5": {
+        "style_2GR9QS": {
           "fontFamily": "Inter",
           "fontWeight": 700,
           "fontSize": 14,
@@ -1621,7 +1903,7 @@
         "Selection": [
           "#D9D9D9"
         ],
-        "layout_MXER8Y": {
+        "layout_XISCR8": {
           "mode": "row",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1639,7 +1921,7 @@
             "gradient": "linear-gradient(90deg, rgba(222, 90, 19, 1) 0%, rgba(255, 136, 0, 1) 100%)"
           }
         ],
-        "layout_TYEOUY": {
+        "layout_LEUTSV": {
           "mode": "row",
           "justifyContent": "center",
           "alignItems": "center",
@@ -1654,10 +1936,10 @@
             "height": 24
           }
         },
-        "effect_1TUASN": {
+        "effect_S1BR8N": {
           "boxShadow": "0px 2.5714285373687744px 5.142857074737549px 0px rgba(0, 0, 0, 0.03), 0px 1.7142857313156128px 3.4285714626312256px 0px rgba(0, 0, 0, 0.02)"
         },
-        "layout_87WCYF": {
+        "layout_KSMGR9": {
           "mode": "none",
           "sizing": {
             "horizontal": "fixed",
@@ -1668,7 +1950,7 @@
             "height": 14.88
           }
         },
-        "layout_YSG7MW": {
+        "layout_VAI4W5": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1676,7 +1958,7 @@
             "height": 8.67
           }
         },
-        "layout_EHJP5L": {
+        "layout_G71KTM": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1688,7 +1970,7 @@
             "height": 8.67
           }
         },
-        "layout_OV50E9": {
+        "layout_N1I6WI": {
           "mode": "none",
           "sizing": {},
           "locationRelativeToParent": {
@@ -1700,7 +1982,7 @@
             "height": 8.67
           }
         },
-        "layout_MS01VB": {
+        "layout_6PA3XT": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1708,7 +1990,7 @@
             "height": 4.31
           }
         },
-        "layout_R2PZ9Y": {
+        "layout_29MSSO": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1716,7 +1998,7 @@
             "height": 4.31
           }
         },
-        "layout_B1IKXT": {
+        "layout_WZ51UF": {
           "mode": "none",
           "sizing": {},
           "dimensions": {
@@ -1724,7 +2006,7 @@
             "height": 3.83
           }
         },
-        "style_OH4M2Q": {
+        "style_CKWTCO": {
           "fontFamily": "Inter",
           "fontWeight": 700,
           "fontSize": 16,
