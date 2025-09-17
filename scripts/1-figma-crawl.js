@@ -157,7 +157,7 @@ function composeMarkdown(metadata, lines, counts) {
 ## File Information
 - **Name**: ${metadata.name}
 - **Last Modified**: ${metadata.lastModified}
-- **Node ID**: ${metadata.rootNodeId}
+- **Node ID**: ${metadata.rootNodeId.replace(/:/g, '-')}
 
 ## Component Structure
 
