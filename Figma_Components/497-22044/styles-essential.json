@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "name": "Component 5",
+    "lastModified": "2025-09-17T12:27:29Z",
+    "rootNodeId": "497:22044",
+    "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=497-22044&t=881GHX8GmV9kcRVQ-4",
+    "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
+    "extractionDate": "2025-09-17T12:27:30.527Z",
+    "enhancementDate": "2025-09-17T12:29:19.135Z",
+    "totalNodes": 23
+  },
+  "components": {
+    "497:22044": {
+      "name": "Component 5",
+      "type": "INSTANCE",
+      "styles": " [flex-col, center, 1440w, height: hug, overflow: auto, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1440px",
+        "height": "144px",
+        "boxShadow": "0px 6px 12px rgba(0, 0, 0, 0.03), 0px 4px 8px rgba(0, 0, 0, 0.02)"
+      }
+    },
+    "I497:22044;255:6854": {
+      "name": "Frame 2147236913",
+      "type": "INSTANCE",
+      "styles": " [flex-col, center, stretch, width: fill, height: hug, gap: 16px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px 16px 0px 0px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1440px",
+        "height": "88px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "16px 16px 0px 0px"
+      }
+    },
+    "I497:22044;255:6854;241:6615": {
+      "name": "Frame 2147236917",
+      "type": "FRAME",
+      "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 178px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "1408px",
+        "height": "56px",
+        "gap": "178px"
+      }
+    },
+    "I497:22044;255:6854;241:6616": {
+      "name": "Frame 2147236919",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "198px",
+        "height": "30px",
+        "gap": "16px"
+      }
+    },
+    "I497:22044;255:6854;241:6617": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I497:22044;255:6854;241:6618;25:166": {
+      "name": "smartgoods",
+      "type": "TEXT",
+      "styles": " [158w, h-align: scale, v-align: scale, overflow: auto, bg: #DE5A13, text: \"smartgoods\", Inter 700 27px, line-height: 1.45em, text-align: left, vertical-align: center, #DE5A13]",
+      "css": {
+        "width": "158px",
+        "height": "19px",
+        "backgroundColor": "rgb(222, 90, 19)",
+        "fontFamily": "Inter",
+        "fontSize": "27px",
+        "fontWeight": 700,
+        "lineHeight": "1.45",
+        "textAlign": "left"
+      },
+      "content": "smartgoods"
+    },
+    "I497:22044;255:6854;244:6684": {
+      "name": "Frame 2147237043",
+      "type": "FRAME",
+      "styles": " [flex-col, width: fill, height: hug, flex-grow, gap: 10px, padding: 0px 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1094px",
+        "height": "56px",
+        "gap": "10px",
+        "paddingRight": "24px",
+        "paddingLeft": "24px"
+      }
+    },
+    "I497:22044;255:6854;241:6624": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, space-between, stretch, width: fill, 56h, gap: 24px, padding: 16px, overflow: auto, border: 1px #151515, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Symbol#309:0=[object Object], Show TextIconCombination#294:0=[object Object], Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "1046px",
+        "height": "56px",
+        "gap": "24px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "borderRadius": "16px",
+        "boxShadow": "0px 6px 12px rgba(0, 0, 0, 0.03), 0px 4px 8px rgba(0, 0, 0, 0.02)"
+      }
+    },
+    "I497:22044;255:6854;241:6624;294:6841;198:5593": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "58px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I497:22044;255:6854;241:6624;294:6841;198:5593;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"Suchen\", Inter 500 16px, line-height: 1.40em, text-align: left, vertical-align: top, #626262]",
+      "css": {
+        "width": "58px",
+        "height": "12px",
+        "backgroundColor": "rgb(98, 98, 98)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "Suchen"
+    },
+    "I497:22044;255:6854;241:6624;60:440": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I497:22044;255:6854;241:6619": {
+      "name": "Frame 2147236918",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "116px",
+        "height": "24px",
+        "gap": "16px"
+      }
+    },
+    "I497:22044;255:6854;244:6742": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I497:22044;255:6854;244:6733": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I497:22044;255:6854;241:6621": {
+      "name": "Frame 2147236915",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "36px",
+        "height": "24px"
+      }
+    },
+    "I497:22044;255:6854;241:6622": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I497:22044;255:6854;241:6623": {
+      "name": "Numbers",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, 12w, 12h, min-w: 12px, min-h: 12px, gap: 12px, padding: 2px, overflow: auto, radius: 6px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "12px",
+        "height": "12px",
+        "gap": "12px",
+        "paddingTop": "2px",
+        "paddingRight": "2px",
+        "paddingBottom": "2px",
+        "paddingLeft": "2px",
+        "borderRadius": "6px"
+      }
+    },
+    "I497:22044;255:6854;241:6623;60:472": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "10px",
+        "height": "10px",
+        "gap": "10px"
+      }
+    },
+    "I497:22044;255:6854;241:6623;60:472;2:8895": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #D9D9D9, text: \"0\", Inter 700 14px, line-height: 1.45em, text-align: center, vertical-align: center, #D9D9D9]",
+      "css": {
+        "width": "10px",
+        "height": "10px",
+        "backgroundColor": "rgb(217, 217, 217)",
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 700,
+        "lineHeight": "1.45",
+        "textAlign": "center"
+      },
+      "content": "0"
+    },
+    "I497:22044;255:6996": {
+      "name": "MenüGoodiesLeiste",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, stretch, width: fill, 56h, min-h: 56px, gap: 16px, padding: 16px, overflow: auto, gradient: #DE5A13→#FF8800, radius: 0px 0px 16px 16px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "1440px",
+        "height": "56px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "borderRadius": "0px 0px 16px 16px"
+      }
+    },
+    "I497:22044;255:6996;255:6966": {
+      "name": "Logos",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, 24w, 24h, gap: 3px, padding: 3px, overflow: auto, shadow: 0px 3px 5px rgba(0,0,0,0.03), 0px 2px 3px rgba(0,0,0,0.02), props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "24px",
+        "height": "24px",
+        "gap": "3px",
+        "paddingTop": "3px",
+        "paddingRight": "3px",
+        "paddingBottom": "3px",
+        "paddingLeft": "3px",
+        "boxShadow": "0px 3px 5px rgba(0, 0, 0, 0.03), 0px 2px 3px rgba(0, 0, 0, 0.02)"
+      }
+    },
+    "I497:22044;255:6996;255:6967": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "453px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I497:22044;255:6996;255:6967;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"Smarte GOODIES. Smart erklärt. Deine Extras. Deine...\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, underline, #FFFFFF]",
+      "css": {
+        "width": "453px",
+        "height": "12px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "Smarte GOODIES. Smart erklärt. Deine Extras. Deine Wahl."
+    }
+  },
+  "colorPalette": [
+    "#626262",
+    "#D9D9D9",
+    "#DE5A13",
+    "#FFFFFF"
+  ],
+  "typography": [
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 27
+    },
+    {
+      "family": "Inter",
+      "weight": 500,
+      "size": 16
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 14
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 16
+    }
+  ]
+}

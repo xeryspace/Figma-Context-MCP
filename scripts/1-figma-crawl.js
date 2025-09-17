@@ -11,6 +11,15 @@ const DEPTH = 20;
 const SECONDARY_OUTPUT_ROOT =
   process.env.CONVERTER_OUTPUT_DIR || "/Users/igormacevic/Documents/Repos/Converter/ToConvert";
 
+// Configuration for optimized output
+const CONFIG = {
+  MAX_JSON_NODES: 100,      // Don't include more than 100 nodes in JSON
+  MAX_JSON_SIZE_KB: 500,    // Don't create JSON files larger than 500KB
+  INCLUDE_RAW_DATA: false,  // Don't include raw Figma data
+  ESSENTIAL_ONLY: true,     // Only include essential CSS properties
+  MIN_CSS_PROPERTIES: 3,    // Minimum CSS properties to include a node
+};
+
 function isBooleanFalse(value) {
   if (value === undefined || value === null) return false;
   if (typeof value === "boolean") return value === false;
@@ -172,6 +181,286 @@ ${lines.join("\n")}
 ${levelLines.join("\n")}
 - **Total Components**: ${total} component${total === 1 ? "" : "s"}
 `;
+}
+
+function extractStyleInfo(node) {
+  const styles = [];
+
+  // Layout mode
+  if (node.layoutMode === 'VERTICAL') styles.push('flex-col');
+  else if (node.layoutMode === 'HORIZONTAL') styles.push('flex-row');
+
+  // Alignment
+  if (node.primaryAxisAlignItems === 'CENTER') styles.push('center');
+  else if (node.primaryAxisAlignItems === 'SPACE_BETWEEN') styles.push('space-between');
+  else if (node.counterAxisAlignItems === 'CENTER') styles.push('center');
+  else if (node.primaryAxisAlignItems === 'MAX') styles.push('flex-end');
+  if (node.layoutAlign === 'STRETCH') styles.push('stretch');
+
+  // Positioning
+  if (node.layoutPositioning === 'ABSOLUTE') {
+    styles.push('absolute');
+    if (node.x !== undefined) styles.push(`x: ${Math.round(node.x)}px`);
+    if (node.y !== undefined) styles.push(`y: ${Math.round(node.y)}px`);
+  }
+
+  // Size - Complete dimensions
+  const width = node.absoluteBoundingBox?.width || node.size?.x;
+  const height = node.absoluteBoundingBox?.height || node.size?.y;
+
+  // Sizing modes
+  if (node.layoutSizingHorizontal === 'FILL') styles.push('width: fill');
+  else if (node.layoutSizingHorizontal === 'HUG') styles.push('width: hug');
+  else if (width) styles.push(`${Math.round(width)}w`);
+
+  if (node.layoutSizingVertical === 'FILL') styles.push('height: fill');
+  else if (node.layoutSizingVertical === 'HUG') styles.push('height: hug');
+  else if (height && (node.layoutSizingVertical === 'FIXED' || height > 50)) {
+    styles.push(`${Math.round(height)}h`);
+  }
+
+  // Min/Max constraints
+  if (node.minWidth !== undefined) styles.push(`min-w: ${Math.round(node.minWidth)}px`);
+  if (node.maxWidth !== undefined) styles.push(`max-w: ${Math.round(node.maxWidth)}px`);
+  if (node.minHeight !== undefined) styles.push(`min-h: ${Math.round(node.minHeight)}px`);
+  if (node.maxHeight !== undefined) styles.push(`max-h: ${Math.round(node.maxHeight)}px`);
+
+  // Auto-layout constraints
+  if (node.layoutGrow === 1) styles.push('flex-grow');
+  if (node.constraints) {
+    const { horizontal, vertical } = node.constraints;
+    if (horizontal && horizontal !== 'LEFT') styles.push(`h-align: ${horizontal.toLowerCase()}`);
+    if (vertical && vertical !== 'TOP') styles.push(`v-align: ${vertical.toLowerCase()}`);
+  }
+
+  // Spacing
+  if (node.itemSpacing) styles.push(`gap: ${Math.round(node.itemSpacing)}px`);
+  if (node.paddingTop || node.paddingBottom || node.paddingLeft || node.paddingRight) {
+    const paddings = [
+      node.paddingTop || 0,
+      node.paddingRight || 0,
+      node.paddingBottom || 0,
+      node.paddingLeft || 0
+    ].map(p => Math.round(p));
+
+    if (paddings.every(p => p === paddings[0])) {
+      styles.push(`padding: ${paddings[0]}px`);
+    } else if (paddings[0] === paddings[2] && paddings[1] === paddings[3]) {
+      styles.push(`padding: ${paddings[0]}px ${paddings[1]}px`);
+    } else {
+      styles.push(`padding: ${paddings.join('px ')}px`);
+    }
+  }
+
+  // Opacity
+  if (node.opacity !== undefined && node.opacity < 1) {
+    styles.push(`opacity: ${node.opacity.toFixed(2)}`);
+  }
+
+  // Blend mode
+  if (node.blendMode && node.blendMode !== 'NORMAL' && node.blendMode !== 'PASS_THROUGH') {
+    styles.push(`blend: ${node.blendMode.toLowerCase().replace(/_/g, '-')}`);
+  }
+
+  // Overflow
+  if (node.clipsContent) styles.push('overflow: hidden');
+  if (node.scrollBehavior === 'SCROLLS') styles.push('overflow: auto');
+
+  // Colors & Fills
+  if (node.fills?.length > 0) {
+    const fill = node.fills[0];
+    if (fill.type === 'SOLID' && fill.color) {
+      const r = Math.round(fill.color.r * 255);
+      const g = Math.round(fill.color.g * 255);
+      const b = Math.round(fill.color.b * 255);
+      const hex = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+      styles.push(`bg: ${hex.toUpperCase()}`);
+
+      // Background opacity
+      if (fill.opacity !== undefined && fill.opacity < 1) {
+        styles.push(`bg-opacity: ${fill.opacity.toFixed(2)}`);
+      }
+    } else if (fill.type === 'GRADIENT_LINEAR') {
+      const stops = fill.gradientStops || [];
+      if (stops.length >= 2) {
+        const startColor = stops[0].color;
+        const endColor = stops[stops.length - 1].color;
+        const startHex = `#${Math.round(startColor.r * 255).toString(16).padStart(2, '0')}${Math.round(startColor.g * 255).toString(16).padStart(2, '0')}${Math.round(startColor.b * 255).toString(16).padStart(2, '0')}`;
+        const endHex = `#${Math.round(endColor.r * 255).toString(16).padStart(2, '0')}${Math.round(endColor.g * 255).toString(16).padStart(2, '0')}${Math.round(endColor.b * 255).toString(16).padStart(2, '0')}`;
+        styles.push(`gradient: ${startHex.toUpperCase()}→${endHex.toUpperCase()}`);
+      }
+    }
+  }
+
+  // Text content and styling
+  if (node.type === 'TEXT' && node.characters) {
+    const text = node.characters.length > 50 ? node.characters.substring(0, 50) + '...' : node.characters;
+    styles.push(`text: "${text}"`);
+
+    if (node.style) {
+      const fontFamily = node.style.fontFamily || 'Inter';
+      const fontSize = Math.round(node.style.fontSize || 16);
+      const fontWeight = node.style.fontWeight || 400;
+      styles.push(`${fontFamily} ${fontWeight} ${fontSize}px`);
+
+      // Line height with explicit units
+      if (node.style.lineHeightPercentFontSize) {
+        styles.push(`line-height: ${(node.style.lineHeightPercentFontSize / 100).toFixed(2)}em`);
+      } else if (node.style.lineHeightPx) {
+        styles.push(`line-height: ${Math.round(node.style.lineHeightPx)}px`);
+      } else if (node.style.lineHeightUnit === 'AUTO') {
+        styles.push(`line-height: auto`);
+      }
+
+      // Text alignment
+      if (node.style.textAlignHorizontal) {
+        styles.push(`text-align: ${node.style.textAlignHorizontal.toLowerCase()}`);
+      }
+      if (node.style.textAlignVertical) {
+        styles.push(`vertical-align: ${node.style.textAlignVertical.toLowerCase()}`);
+      }
+
+      // Font variants
+      if (node.style.italic) styles.push('italic');
+      if (node.style.letterSpacing) {
+        styles.push(`letter-spacing: ${node.style.letterSpacing.toFixed(2)}px`);
+      }
+      if (node.style.textDecoration) {
+        styles.push(node.style.textDecoration.toLowerCase());
+      }
+      if (node.style.textCase) {
+        styles.push(`text-transform: ${node.style.textCase.toLowerCase()}`);
+      }
+    }
+
+    if (node.fills?.length > 0 && node.fills[0].type === 'SOLID') {
+      const color = node.fills[0].color;
+      const hex = `#${Math.round(color.r * 255).toString(16).padStart(2, '0')}${Math.round(color.g * 255).toString(16).padStart(2, '0')}${Math.round(color.b * 255).toString(16).padStart(2, '0')}`;
+      styles.push(hex.toUpperCase());
+    }
+  }
+
+  // Borders
+  if (node.strokes?.length > 0 && node.strokeWeight) {
+    const stroke = node.strokes[0];
+    if (stroke.type === 'SOLID') {
+      const color = stroke.color;
+      const hex = `#${Math.round(color.r * 255).toString(16).padStart(2, '0')}${Math.round(color.g * 255).toString(16).padStart(2, '0')}${Math.round(color.b * 255).toString(16).padStart(2, '0')}`;
+      styles.push(`border: ${Math.round(node.strokeWeight)}px ${hex.toUpperCase()}`);
+    }
+  }
+
+  // Corner radius
+  if (node.cornerRadius || node.rectangleCornerRadii) {
+    if (node.cornerRadius) {
+      styles.push(`radius: ${Math.round(node.cornerRadius)}px`);
+    } else if (node.rectangleCornerRadii) {
+      const radii = node.rectangleCornerRadii.map(r => Math.round(r));
+      if (radii.every(r => r === radii[0])) {
+        styles.push(`radius: ${radii[0]}px`);
+      } else {
+        styles.push(`radius: ${radii.join('px ')}px`);
+      }
+    }
+  }
+
+  // Shadows - capture all shadows
+  if (node.effects?.length > 0) {
+    const shadows = node.effects.filter(e => e.type === 'DROP_SHADOW' && e.visible !== false);
+    if (shadows.length > 0) {
+      const shadowStrs = shadows.map(shadow => {
+        const x = Math.round(shadow.offset?.x || 0);
+        const y = Math.round(shadow.offset?.y || 0);
+        const blur = Math.round(shadow.radius || 0);
+        const spread = Math.round(shadow.spread || 0);
+        const color = shadow.color;
+        const rgba = `rgba(${Math.round(color.r * 255)},${Math.round(color.g * 255)},${Math.round(color.b * 255)},${(color.a || 1).toFixed(2)})`;
+        return spread ? `${x}px ${y}px ${blur}px ${spread}px ${rgba}` : `${x}px ${y}px ${blur}px ${rgba}`;
+      });
+      styles.push(`shadow: ${shadowStrs.join(', ')}`);
+    }
+
+    // Inner shadows
+    const innerShadows = node.effects.filter(e => e.type === 'INNER_SHADOW' && e.visible !== false);
+    if (innerShadows.length > 0) {
+      const shadowStrs = innerShadows.map(shadow => {
+        const x = Math.round(shadow.offset?.x || 0);
+        const y = Math.round(shadow.offset?.y || 0);
+        const blur = Math.round(shadow.radius || 0);
+        const color = shadow.color;
+        const rgba = `rgba(${Math.round(color.r * 255)},${Math.round(color.g * 255)},${Math.round(color.b * 255)},${(color.a || 1).toFixed(2)})`;
+        return `inset ${x}px ${y}px ${blur}px ${rgba}`;
+      });
+      styles.push(`inner-shadow: ${shadowStrs.join(', ')}`);
+    }
+  }
+
+  // Special cases - Icons and vectors
+  if (node.type === 'VECTOR' || node.name?.toLowerCase().includes('icon')) {
+    // Extract meaningful icon name
+    const iconName = node.name
+      .replace(/[_-]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .toLowerCase();
+    styles.push(`icon: ${iconName}`);
+
+    // Indicate if SVG path data is available
+    if (node.vectorPaths?.length > 0 || node.fillGeometry?.length > 0) {
+      styles.push('svg-path');
+    }
+  }
+
+  // Component instance properties
+  if (node.componentProperties) {
+    const props = Object.entries(node.componentProperties)
+      .filter(([key, value]) => value && value !== 'Default')
+      .map(([key, value]) => `${key}=${value}`);
+    if (props.length > 0) {
+      styles.push(`props: [${props.join(', ')}]`);
+    }
+  }
+
+  // Instance swap preferences
+  if (node.exposedInstances?.length > 0) {
+    styles.push(`swappable`);
+  }
+
+  return styles.length > 0 ? ` [${styles.join(', ')}]` : '';
+}
+
+function buildEnhancedTreeLines(root, styleMap) {
+  const lines = [];
+  const depthCounts = new Map();
+
+  function traverse(current, depth, prefix, isLast) {
+    depthCounts.set(depth, (depthCounts.get(depth) || 0) + 1);
+    const styleInfo = styleMap.get(current.id) || '';
+    const label = `${current.name} (ID: ${current.id})${styleInfo}`;
+
+    if (depth === 0) {
+      lines.push(`📦 ${label}`);
+    } else {
+      lines.push(`${prefix}${isLast ? "└── " : "├── "}${label}`);
+    }
+
+    const children = current.children || [];
+    const nextPrefix = depth === 0 ? "   " : `${prefix}${isLast ? "    " : "│   "}`;
+
+    children.forEach((child, index) => {
+      traverse(child, depth + 1, nextPrefix, index === children.length - 1);
+    });
+  }
+
+  traverse(root, 0, "", true);
+
+  const counts = [];
+  for (const [depth, count] of depthCounts.entries()) {
+    counts.push({ depth, count });
+  }
+  counts.sort((a, b) => a.depth - b.depth);
+
+  return { lines, counts };
 }
 
 function composeJson(metadata, tree, counts) {
@@ -348,6 +637,350 @@ Files:
   });
   console.log(`Total: ${counts.reduce((sum, item) => sum + item.count, 0)} components`);
   console.log(`\n📄 Markdown: ${markdownPath}`);
+
+  // Enhancement phase
+  console.log("\n🎨 Enhancing tree with styling information...");
+
+  // Collect strategic nodes for enhancement
+  const nodesToEnhance = new Set();
+
+  function collectStrategicNodes(node, depth = 0) {
+    // Always enhance root and first 2 levels
+    if (depth <= 2) {
+      nodesToEnhance.add(node.id);
+    }
+
+    // Enhance text nodes
+    if (node.type === 'TEXT' || node.name?.toLowerCase().includes('typography')) {
+      nodesToEnhance.add(node.id);
+    }
+
+    // Enhance key UI containers
+    if (node.name?.toLowerCase().includes('menu') ||
+        node.name?.toLowerCase().includes('frame') ||
+        node.name?.toLowerCase().includes('button') ||
+        node.name?.toLowerCase().includes('number')) {
+      nodesToEnhance.add(node.id);
+    }
+
+    // Recursively collect from children
+    if (node.children) {
+      node.children.forEach(child => collectStrategicNodes(child, depth + 1));
+    }
+  }
+
+  collectStrategicNodes(tree);
+  console.log(`📊 Enhancing ${nodesToEnhance.size} strategic nodes...`);
+
+  // Fetch detailed data for strategic nodes
+  const styleMap = new Map();
+  const enhancedNodes = new Map();
+
+  for (const nodeId of nodesToEnhance) {
+    try {
+      const response = await figmaService.getRawNode(fileKey, nodeId, 2);
+      const nodeData = response?.nodes?.[nodeId]?.document;
+      if (nodeData) {
+        enhancedNodes.set(nodeId, nodeData);
+        const styleInfo = extractStyleInfo(nodeData);
+        if (styleInfo) {
+          styleMap.set(nodeId, styleInfo);
+        }
+      }
+    } catch (error) {
+      console.log(`⚠️  Could not enhance node ${nodeId}`);
+    }
+  }
+
+  // Build enhanced tree
+  function enhanceTree(node) {
+    const enhanced = enhancedNodes.get(node.id);
+    if (enhanced) {
+      // Merge enhanced data
+      node.type = enhanced.type || node.type;
+      node.name = enhanced.name || node.name;
+    }
+
+    if (node.children) {
+      node.children.forEach(child => enhanceTree(child));
+    }
+
+    return node;
+  }
+
+  const enhancedTree = enhanceTree(JSON.parse(JSON.stringify(tree)));
+  const { lines: enhancedLines, counts: enhancedCounts } = buildEnhancedTreeLines(enhancedTree, styleMap);
+
+  // Create enhanced markdown
+  const enhancedMarkdown = `# Figma Components Tree (Enhanced)
+
+## File Information
+- **Name**: ${metadata.name}
+- **Last Modified**: ${metadata.lastModified}
+- **Node ID**: ${metadata.rootNodeId.replace(/:/g, '-')}
+- **Enhanced**: ${new Date().toISOString()}
+
+## Component Structure with Styling
+
+\`\`\`
+${enhancedLines.join("\n")}
+\`\`\`
+
+## Component Summary
+
+### Total Count
+${counts.map(({ depth, count }) => `- **Level ${depth}**: ${count} component${count === 1 ? "" : "s"}`).join("\n")}
+- **Total Components**: ${counts.reduce((sum, item) => sum + item.count, 0)} components
+
+## CSS Properties Legend
+
+- **Layout**: flex-row, flex-col, center, space-between, flex-end
+- **Size**: WxH in px, fill-width
+- **Spacing**: gap, padding
+- **Colors**: bg (background), gradient, hex colors for text
+- **Typography**: Font Family, Weight, Size, line-height
+- **Effects**: shadow, border, radius
+- **Content**: text content in quotes
+`;
+
+  const enhancedPath = path.join(outputDir, "component-tree-enhanced.md");
+  await writeFile(enhancedPath, enhancedMarkdown, "utf8");
+
+  // Essential style data (compact)
+  const essentialStyles = {};
+  const colorPalette = new Set();
+  const typography = new Map();
+
+  // Build essential style data for each node
+  function buildEssentialStyleData(node, depth = 0) {
+    const nodeStyles = styleMap.get(node.id);
+    const enhancedData = enhancedNodes.get(node.id);
+
+    if (nodeStyles || enhancedData) {
+      // Only store what's needed for HTML/CSS generation
+      const essential = {
+        name: node.name,
+        type: node.type,
+        styles: nodeStyles || ''
+      };
+
+      // Only add CSS if it has meaningful properties
+      if (enhancedData) {
+        const css = extractCSSProperties(enhancedData);
+        if (Object.keys(css).length >= CONFIG.MIN_CSS_PROPERTIES) {
+          essential.css = css;
+        }
+
+        // Collect colors
+        if (enhancedData.fills?.length > 0) {
+          enhancedData.fills.forEach(fill => {
+            if (fill.type === 'SOLID' && fill.color) {
+              const hex = rgbToHex(fill.color);
+              colorPalette.add(hex);
+            }
+          });
+        }
+
+        // Collect typography
+        if (node.type === 'TEXT' && enhancedData.style) {
+          const fontKey = `${enhancedData.style.fontFamily || 'Inter'} ${enhancedData.style.fontWeight || 400} ${Math.round(enhancedData.style.fontSize || 16)}px`;
+          typography.set(fontKey, {
+            family: enhancedData.style.fontFamily || 'Inter',
+            weight: enhancedData.style.fontWeight || 400,
+            size: Math.round(enhancedData.style.fontSize || 16)
+          });
+        }
+
+        // Only add text content for TEXT nodes
+        if (node.type === 'TEXT' && enhancedData.characters) {
+          essential.content = enhancedData.characters;
+        }
+      }
+
+      essentialStyles[node.id] = essential;
+    }
+
+    if (node.children) {
+      node.children.forEach(child => buildEssentialStyleData(child, depth + 1));
+    }
+  }
+
+  // Helper function to convert RGB to hex
+  function rgbToHex(color) {
+    const r = Math.round(color.r * 255);
+    const g = Math.round(color.g * 255);
+    const b = Math.round(color.b * 255);
+    return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`.toUpperCase();
+  }
+
+  // Extract CSS properties for JSON export
+  function extractCSSProperties(node) {
+    const css = {};
+
+    // Display and layout
+    if (node.layoutMode === 'VERTICAL') {
+      css.display = 'flex';
+      css.flexDirection = 'column';
+    } else if (node.layoutMode === 'HORIZONTAL') {
+      css.display = 'flex';
+      css.flexDirection = 'row';
+    }
+
+    // Dimensions
+    const width = node.absoluteBoundingBox?.width || node.size?.x;
+    const height = node.absoluteBoundingBox?.height || node.size?.y;
+    if (width) css.width = `${Math.round(width)}px`;
+    if (height) css.height = `${Math.round(height)}px`;
+
+    // Spacing
+    if (node.itemSpacing) css.gap = `${Math.round(node.itemSpacing)}px`;
+    if (node.paddingTop) css.paddingTop = `${Math.round(node.paddingTop)}px`;
+    if (node.paddingRight) css.paddingRight = `${Math.round(node.paddingRight)}px`;
+    if (node.paddingBottom) css.paddingBottom = `${Math.round(node.paddingBottom)}px`;
+    if (node.paddingLeft) css.paddingLeft = `${Math.round(node.paddingLeft)}px`;
+
+    // Colors
+    if (node.fills?.length > 0) {
+      const fill = node.fills[0];
+      if (fill.type === 'SOLID' && fill.color) {
+        const r = Math.round(fill.color.r * 255);
+        const g = Math.round(fill.color.g * 255);
+        const b = Math.round(fill.color.b * 255);
+        css.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        if (fill.opacity !== undefined && fill.opacity < 1) {
+          css.backgroundOpacity = fill.opacity;
+        }
+      }
+    }
+
+    // Text styles
+    if (node.type === 'TEXT' && node.style) {
+      css.fontFamily = node.style.fontFamily || 'Inter';
+      css.fontSize = `${Math.round(node.style.fontSize || 16)}px`;
+      css.fontWeight = node.style.fontWeight || 400;
+      if (node.style.lineHeightPercentFontSize) {
+        css.lineHeight = (node.style.lineHeightPercentFontSize / 100).toFixed(2);
+      }
+      if (node.style.letterSpacing) {
+        css.letterSpacing = `${node.style.letterSpacing.toFixed(2)}px`;
+      }
+      if (node.style.textAlignHorizontal) {
+        css.textAlign = node.style.textAlignHorizontal.toLowerCase();
+      }
+    }
+
+    // Border radius
+    if (node.cornerRadius) {
+      css.borderRadius = `${Math.round(node.cornerRadius)}px`;
+    } else if (node.rectangleCornerRadii) {
+      const radii = node.rectangleCornerRadii.map(r => `${Math.round(r)}px`);
+      css.borderRadius = radii.join(' ');
+    }
+
+    // Effects
+    if (node.opacity !== undefined && node.opacity < 1) {
+      css.opacity = node.opacity;
+    }
+
+    if (node.effects?.length > 0) {
+      const shadows = node.effects
+        .filter(e => e.type === 'DROP_SHADOW' && e.visible !== false)
+        .map(shadow => {
+          const x = Math.round(shadow.offset?.x || 0);
+          const y = Math.round(shadow.offset?.y || 0);
+          const blur = Math.round(shadow.radius || 0);
+          const color = shadow.color;
+          const rgba = `rgba(${Math.round(color.r * 255)}, ${Math.round(color.g * 255)}, ${Math.round(color.b * 255)}, ${(color.a || 1).toFixed(2)})`;
+          return `${x}px ${y}px ${blur}px ${rgba}`;
+        });
+      if (shadows.length > 0) {
+        css.boxShadow = shadows.join(', ');
+      }
+    }
+
+    return css;
+  }
+
+  buildEssentialStyleData(enhancedTree);
+
+  // Create component lookup table for quick reference
+  const componentLookup = {};
+  function buildLookup(node, path = '') {
+    const currentPath = path ? `${path} > ${node.name}` : node.name;
+    componentLookup[node.id] = {
+      path: currentPath,
+      type: node.type,
+      styles: styleMap.get(node.id) || '',
+      parent: path || null
+    };
+
+    if (node.children) {
+      node.children.forEach(child => buildLookup(child, currentPath));
+    }
+  }
+  buildLookup(enhancedTree);
+
+  // Write essential styles JSON (compact)
+  const essentialData = {
+    metadata: {
+      ...metadata,
+      enhancementDate: new Date().toISOString(),
+      totalNodes: Object.keys(essentialStyles).length
+    },
+    components: essentialStyles,
+    colorPalette: Array.from(colorPalette).sort(),
+    typography: Array.from(typography.values())
+  };
+
+  const essentialJsonPath = path.join(outputDir, "styles-essential.json");
+  await writeFile(essentialJsonPath, JSON.stringify(essentialData, null, 2), "utf8");
+
+  // Write component lookup JSON
+  const lookupJsonPath = path.join(outputDir, "component-lookup.json");
+  await writeFile(lookupJsonPath, JSON.stringify(componentLookup, null, 2), "utf8");
+
+  console.log(`\n✨ Enhanced tree created!`);
+  console.log(`📄 Enhanced: ${enhancedPath}`);
+  console.log(`📦 Essential Styles: ${essentialJsonPath}`);
+  console.log(`🔍 Component Lookup: ${lookupJsonPath}`);
+  console.log(`\n🎨 Colors found: ${colorPalette.size}`);
+  console.log(`🔤 Typography variants: ${typography.size}`);
+
+  // Update README
+  const updatedInstructions = `# Component Tree Export
+
+This directory contains a deterministic snapshot of the Figma component tree.
+
+- **Source URL**: ${figmaUrl}
+- **Root Node**: ${nodeId}
+- **Depth**: ${DEPTH}
+- **Generated**: ${metadata.extractionDate}
+
+Files:
+- \`component-tree.md\`: Basic tree structure
+- \`component-tree-enhanced.md\`: Tree with inline CSS styling (PRIMARY - use this!)
+- \`styles-essential.json\`: Compact style data with color palette and typography
+- \`component-lookup.json\`: Quick reference table for all components
+
+## Usage Priority for AI/Conversion:
+
+1. **PRIMARY**: Use \`component-tree-enhanced.md\` - Has all styling inline
+2. **REFERENCE**: Use \`styles-essential.json\` for color palette and typography
+3. **LOOKUP**: Use \`component-lookup.json\` for finding components by ID
+`;
+
+  await writeFile(path.join(outputDir, "README.md"), updatedInstructions, "utf8");
+
+  // Mirror enhanced files if needed
+  if (mirrorResult.mirrored) {
+    const enhancedMirrorPath = path.join(mirrorResult.destination, "component-tree-enhanced.md");
+    const essentialMirrorPath = path.join(mirrorResult.destination, "styles-essential.json");
+    const lookupMirrorPath = path.join(mirrorResult.destination, "component-lookup.json");
+    await writeFile(enhancedMirrorPath, enhancedMarkdown, "utf8");
+    await writeFile(essentialMirrorPath, JSON.stringify(essentialData, null, 2), "utf8");
+    await writeFile(lookupMirrorPath, JSON.stringify(componentLookup, null, 2), "utf8");
+    await writeFile(path.join(mirrorResult.destination, "README.md"), updatedInstructions, "utf8");
+  }
 }
 
 main().catch((error) => {
