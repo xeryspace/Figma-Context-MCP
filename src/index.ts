@@ -1,7 +1,7 @@
 // Re-export the server and its types
 export { createServer } from "./mcp/index.js";
 export type { SimplifiedDesign } from "./extractors/types.js";
-export type { FigmaService } from "./services/figma.js";
+export { FigmaService } from "./services/figma.js";
 export { getServerConfig } from "./config.js";
 export { startServer } from "./cli.js";
 

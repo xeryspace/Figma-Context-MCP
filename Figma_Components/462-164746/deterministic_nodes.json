@@ -1,0 +1,1738 @@
+{
+  "metadata": {
+    "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=462-164746&m=dev",
+    "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
+    "rootNodeId": "462:164746",
+    "extractionDate": "2025-09-17T07:40:18.090Z",
+    "totalNodes": 50,
+    "maxDepth": 7,
+    "tool": "1-figma-crawl.js",
+    "version": "1.0.0",
+    "method": "figma_service_depth_20"
+  },
+  "nodes": [
+    {
+      "id": "462:164746",
+      "name": "Component 4",
+      "type": "INSTANCE",
+      "depth": 0,
+      "componentId": "634:92992",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_9S0H9E",
+      "effects": "Shadow"
+    },
+    {
+      "id": "I462:164746;255:6854",
+      "name": "Frame 2147236913",
+      "type": "INSTANCE",
+      "depth": 1,
+      "componentId": "634:92950",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_SWEFTL",
+      "fills": "Base",
+      "borderRadius": "16px 16px 0px 0px"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6615",
+      "name": "Frame 2147236917",
+      "type": "FRAME",
+      "depth": 2,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 3,
+      "layout": "layout_CSGYSP"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6616",
+      "name": "Frame 2147236919",
+      "type": "FRAME",
+      "depth": 3,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_45S98R"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6617",
+      "name": "Menu",
+      "type": "INSTANCE",
+      "depth": 4,
+      "componentId": "634:92693",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_927L0S"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6617;60:335",
+      "name": "dehaze",
+      "type": "GROUP",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_7CO4UL"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6617;60:330",
+      "name": "Bounding box",
+      "type": "RECTANGLE",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_7CO4UL",
+      "fills": "fill_JFT98D"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6617;60:334",
+      "name": "dehaze",
+      "type": "IMAGE-SVG",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_NB6QWY",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6618",
+      "name": "Logos",
+      "type": "INSTANCE",
+      "depth": 4,
+      "componentId": "389:47691",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_21W6MQ"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6618;25:166",
+      "name": "smartgoods",
+      "type": "TEXT",
+      "depth": 5,
+      "componentId": null,
+      "text": "smartgoods",
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_A7PB0J",
+      "fills": "Highlight",
+      "textStyle": "style_BCN5W4"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6618;25:167",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_F03UTY",
+      "fills": "Highlight"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6618;25:168",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_XQIP2U",
+      "fills": "fill_70YV7M"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6618;25:169",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_TNR8EK",
+      "fills": "fill_70YV7M"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6684",
+      "name": "Frame 2147237043",
+      "type": "FRAME",
+      "depth": 3,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_LSJ6OX"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624",
+      "name": "Typography",
+      "type": "INSTANCE",
+      "depth": 4,
+      "componentId": "634:92941",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_TRAWD1",
+      "effects": "Shadow",
+      "strokes": "Text",
+      "strokeWeight": "1px",
+      "borderRadius": "16px"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;294:6841",
+      "name": "TextIconCombination",
+      "type": "INSTANCE",
+      "depth": 5,
+      "componentId": "359:88571",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_45S98R"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;294:6841;198:5593",
+      "name": "Typography",
+      "type": "INSTANCE",
+      "depth": 6,
+      "componentId": "291:42371",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_KCCIBC"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;294:6841;198:5593;2:8965",
+      "name": "Typography",
+      "type": "TEXT",
+      "depth": 7,
+      "componentId": null,
+      "text": "Suchen",
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_9K5ITF",
+      "fills": "Text",
+      "textStyle": "style_Q8JIS8"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;60:440",
+      "name": "Menu",
+      "type": "INSTANCE",
+      "depth": 5,
+      "componentId": "634:92698",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_927L0S"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;60:440;60:413",
+      "name": "search",
+      "type": "GROUP",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_7CO4UL"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;60:440;60:408",
+      "name": "Bounding box",
+      "type": "RECTANGLE",
+      "depth": 7,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_7CO4UL",
+      "fills": "fill_JFT98D"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6624;60:440;60:412",
+      "name": "search",
+      "type": "IMAGE-SVG",
+      "depth": 7,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_0ZG23Z",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6619",
+      "name": "Frame 2147236918",
+      "type": "FRAME",
+      "depth": 3,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 3,
+      "layout": "layout_XGRDF5"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6742",
+      "name": "Menu",
+      "type": "INSTANCE",
+      "depth": 4,
+      "componentId": "634:92700",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_927L0S"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6742;262:7295",
+      "name": "info",
+      "type": "GROUP",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_7CO4UL"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6742;262:7290",
+      "name": "Bounding box",
+      "type": "RECTANGLE",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_7CO4UL",
+      "fills": "fill_JFT98D"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6742;262:7294",
+      "name": "info",
+      "type": "IMAGE-SVG",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_6JHMHH",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6733",
+      "name": "Menu",
+      "type": "INSTANCE",
+      "depth": 4,
+      "componentId": "634:92694",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_927L0S"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6733;60:341",
+      "name": "person",
+      "type": "GROUP",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_7CO4UL"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6733;60:336",
+      "name": "Bounding box",
+      "type": "RECTANGLE",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_7CO4UL",
+      "fills": "fill_JFT98D"
+    },
+    {
+      "id": "I462:164746;255:6854;244:6733;60:340",
+      "name": "person",
+      "type": "IMAGE-SVG",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_8XFYQU",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6621",
+      "name": "Frame 2147236915",
+      "type": "FRAME",
+      "depth": 4,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_2JCNIB"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6622",
+      "name": "Menu",
+      "type": "INSTANCE",
+      "depth": 5,
+      "componentId": "634:92696",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_927L0S"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6622;60:393",
+      "name": "shopping_cart",
+      "type": "GROUP",
+      "depth": 6,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_7CO4UL"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6622;60:388",
+      "name": "Bounding box",
+      "type": "RECTANGLE",
+      "depth": 7,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_7CO4UL",
+      "fills": "fill_JFT98D"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6622;60:392",
+      "name": "shopping_cart",
+      "type": "IMAGE-SVG",
+      "depth": 7,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_OGXF95",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6623",
+      "name": "Numbers",
+      "type": "INSTANCE",
+      "depth": 5,
+      "componentId": "291:42677",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_S1BC1L",
+      "borderRadius": "6px"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6623;60:472",
+      "name": "Typography",
+      "type": "INSTANCE",
+      "depth": 6,
+      "componentId": "291:42368",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_CQ3LAV"
+    },
+    {
+      "id": "I462:164746;255:6854;241:6623;60:472;2:8895",
+      "name": "Typography",
+      "type": "TEXT",
+      "depth": 7,
+      "componentId": null,
+      "text": "0",
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_9K5ITF",
+      "fills": "Selection",
+      "textStyle": "style_O2QUR5"
+    },
+    {
+      "id": "I462:164746;255:6996",
+      "name": "MenüGoodiesLeiste",
+      "type": "INSTANCE",
+      "depth": 1,
+      "componentId": "462:161233",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_MXER8Y",
+      "fills": "Verlauf 2",
+      "borderRadius": "0px 0px 16px 16px"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966",
+      "name": "Logos",
+      "type": "INSTANCE",
+      "depth": 2,
+      "componentId": "389:47697",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_TYEOUY",
+      "effects": "effect_1TUASN"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5966",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "depth": 3,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_87WCYF",
+      "fills": "Base"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5967",
+      "name": "oo",
+      "type": "GROUP",
+      "depth": 4,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_YSG7MW"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5968",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_EHJP5L",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5969",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_OV50E9",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5970",
+      "name": "Union",
+      "type": "BOOLEAN_OPERATION",
+      "depth": 4,
+      "componentId": null,
+      "text": null,
+      "hasChildren": true,
+      "childCount": 2,
+      "layout": "layout_MS01VB",
+      "fills": "Text"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5971",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_R2PZ9Y",
+      "fills": "fill_70YV7M"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6966;219:5972",
+      "name": "Vector",
+      "type": "IMAGE-SVG",
+      "depth": 5,
+      "componentId": null,
+      "text": null,
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_B1IKXT",
+      "fills": "fill_70YV7M"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6967",
+      "name": "Typography",
+      "type": "INSTANCE",
+      "depth": 2,
+      "componentId": "291:42371",
+      "text": null,
+      "hasChildren": true,
+      "childCount": 1,
+      "layout": "layout_KCCIBC"
+    },
+    {
+      "id": "I462:164746;255:6996;255:6967;2:8965",
+      "name": "Typography",
+      "type": "TEXT",
+      "depth": 3,
+      "componentId": null,
+      "text": "Smarte GOODIES. Smart erklärt. Deine Extras. Deine Wahl.",
+      "hasChildren": false,
+      "childCount": 0,
+      "layout": "layout_9K5ITF",
+      "fills": "Base",
+      "textStyle": "style_OH4M2Q"
+    }
+  ],
+  "simplified": {
+    "name": "Smartgoods Webseite",
+    "lastModified": "2025-09-16T13:53:44Z",
+    "thumbnailUrl": "https://s3-alpha.figma.com/thumbnails/61d849b9-7cf4-443d-982f-890cd3d48a1f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC2QGZF2FH%2F20250914%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250914T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=131ae6818beff392b1a4fde56efa6915e0901cd5cfbc07e6076920e4ae3d63a5",
+    "nodes": [
+      {
+        "id": "462:164746",
+        "name": "Component 4",
+        "type": "INSTANCE",
+        "layout": "layout_9S0H9E",
+        "effects": "Shadow",
+        "componentId": "634:92992",
+        "componentProperties": [
+          {
+            "name": "Property 1",
+            "value": "MenuLeisteDT Banner",
+            "type": "VARIANT"
+          }
+        ],
+        "children": [
+          {
+            "id": "I462:164746;255:6854",
+            "name": "Frame 2147236913",
+            "type": "INSTANCE",
+            "layout": "layout_SWEFTL",
+            "fills": "Base",
+            "borderRadius": "16px 16px 0px 0px",
+            "componentId": "634:92950",
+            "componentProperties": [
+              {
+                "name": "Property 1",
+                "value": "MeuLeisteTopDT",
+                "type": "VARIANT"
+              }
+            ],
+            "children": [
+              {
+                "id": "I462:164746;255:6854;241:6615",
+                "name": "Frame 2147236917",
+                "type": "FRAME",
+                "layout": "layout_CSGYSP",
+                "children": [
+                  {
+                    "id": "I462:164746;255:6854;241:6616",
+                    "name": "Frame 2147236919",
+                    "type": "FRAME",
+                    "layout": "layout_45S98R",
+                    "children": [
+                      {
+                        "id": "I462:164746;255:6854;241:6617",
+                        "name": "Menu",
+                        "type": "INSTANCE",
+                        "layout": "layout_927L0S",
+                        "componentId": "634:92693",
+                        "componentProperties": [
+                          {
+                            "name": "Property 1",
+                            "value": "menu",
+                            "type": "VARIANT"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;241:6617;60:335",
+                            "name": "dehaze",
+                            "type": "GROUP",
+                            "layout": "layout_7CO4UL",
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6617;60:330",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "layout": "layout_7CO4UL",
+                                "fills": "fill_JFT98D"
+                              },
+                              {
+                                "id": "I462:164746;255:6854;241:6617;60:334",
+                                "name": "dehaze",
+                                "type": "IMAGE-SVG",
+                                "layout": "layout_NB6QWY",
+                                "fills": "Text"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I462:164746;255:6854;241:6618",
+                        "name": "Logos",
+                        "type": "INSTANCE",
+                        "layout": "layout_21W6MQ",
+                        "componentId": "389:47691",
+                        "componentProperties": [
+                          {
+                            "name": "Property 1",
+                            "value": "Default",
+                            "type": "VARIANT"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;241:6618;25:166",
+                            "name": "smartgoods",
+                            "type": "TEXT",
+                            "layout": "layout_A7PB0J",
+                            "text": "smartgoods",
+                            "textStyle": "style_BCN5W4",
+                            "fills": "Highlight"
+                          },
+                          {
+                            "id": "I462:164746;255:6854;241:6618;25:167",
+                            "name": "Union",
+                            "type": "BOOLEAN_OPERATION",
+                            "layout": "layout_F03UTY",
+                            "fills": "Highlight",
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6618;25:168",
+                                "name": "Vector",
+                                "type": "IMAGE-SVG",
+                                "layout": "layout_XQIP2U",
+                                "fills": "fill_70YV7M"
+                              },
+                              {
+                                "id": "I462:164746;255:6854;241:6618;25:169",
+                                "name": "Vector",
+                                "type": "IMAGE-SVG",
+                                "layout": "layout_TNR8EK",
+                                "fills": "fill_70YV7M"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I462:164746;255:6854;244:6684",
+                    "name": "Frame 2147237043",
+                    "type": "FRAME",
+                    "layout": "layout_LSJ6OX",
+                    "children": [
+                      {
+                        "id": "I462:164746;255:6854;241:6624",
+                        "name": "Typography",
+                        "type": "INSTANCE",
+                        "layout": "layout_TRAWD1",
+                        "strokes": "Text",
+                        "strokeWeight": "1px",
+                        "effects": "Shadow",
+                        "borderRadius": "16px",
+                        "componentId": "634:92941",
+                        "componentProperties": [
+                          {
+                            "name": "Show Symbol#309:0",
+                            "value": "true",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "name": "Show TextIconCombination#294:0",
+                            "value": "true",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "name": "Property 1",
+                            "value": "Variant2",
+                            "type": "VARIANT"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;241:6624;294:6841",
+                            "name": "TextIconCombination",
+                            "type": "INSTANCE",
+                            "layout": "layout_45S98R",
+                            "componentId": "359:88571",
+                            "componentProperties": [
+                              {
+                                "name": "Show Kategorien#200:0",
+                                "value": "false",
+                                "type": "BOOLEAN"
+                              },
+                              {
+                                "name": "Show Kategorien 2#200:3",
+                                "value": "true",
+                                "type": "BOOLEAN"
+                              },
+                              {
+                                "name": "Property 1",
+                                "value": "rechts",
+                                "type": "VARIANT"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6624;294:6841;198:5593",
+                                "name": "Typography",
+                                "type": "INSTANCE",
+                                "layout": "layout_KCCIBC",
+                                "componentId": "291:42371",
+                                "componentProperties": [
+                                  {
+                                    "name": "Property 1",
+                                    "value": "Variant4",
+                                    "type": "VARIANT"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "id": "I462:164746;255:6854;241:6624;294:6841;198:5593;2:8965",
+                                    "name": "Typography",
+                                    "type": "TEXT",
+                                    "layout": "layout_9K5ITF",
+                                    "text": "Suchen",
+                                    "textStyle": "style_Q8JIS8",
+                                    "fills": "Text"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "I462:164746;255:6854;241:6624;60:440",
+                            "name": "Menu",
+                            "type": "INSTANCE",
+                            "layout": "layout_927L0S",
+                            "componentId": "634:92698",
+                            "componentProperties": [
+                              {
+                                "name": "Property 1",
+                                "value": "search",
+                                "type": "VARIANT"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6624;60:440;60:413",
+                                "name": "search",
+                                "type": "GROUP",
+                                "layout": "layout_7CO4UL",
+                                "children": [
+                                  {
+                                    "id": "I462:164746;255:6854;241:6624;60:440;60:408",
+                                    "name": "Bounding box",
+                                    "type": "RECTANGLE",
+                                    "layout": "layout_7CO4UL",
+                                    "fills": "fill_JFT98D"
+                                  },
+                                  {
+                                    "id": "I462:164746;255:6854;241:6624;60:440;60:412",
+                                    "name": "search",
+                                    "type": "IMAGE-SVG",
+                                    "layout": "layout_0ZG23Z",
+                                    "fills": "Text"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I462:164746;255:6854;241:6619",
+                    "name": "Frame 2147236918",
+                    "type": "FRAME",
+                    "layout": "layout_XGRDF5",
+                    "children": [
+                      {
+                        "id": "I462:164746;255:6854;244:6742",
+                        "name": "Menu",
+                        "type": "INSTANCE",
+                        "layout": "layout_927L0S",
+                        "componentId": "634:92700",
+                        "componentProperties": [
+                          {
+                            "name": "Property 1",
+                            "value": "info2",
+                            "type": "VARIANT"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;244:6742;262:7295",
+                            "name": "info",
+                            "type": "GROUP",
+                            "layout": "layout_7CO4UL",
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;244:6742;262:7290",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "layout": "layout_7CO4UL",
+                                "fills": "fill_JFT98D"
+                              },
+                              {
+                                "id": "I462:164746;255:6854;244:6742;262:7294",
+                                "name": "info",
+                                "type": "IMAGE-SVG",
+                                "layout": "layout_6JHMHH",
+                                "fills": "Text"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I462:164746;255:6854;244:6733",
+                        "name": "Menu",
+                        "type": "INSTANCE",
+                        "layout": "layout_927L0S",
+                        "componentId": "634:92694",
+                        "componentProperties": [
+                          {
+                            "name": "Property 1",
+                            "value": "user logged out",
+                            "type": "VARIANT"
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;244:6733;60:341",
+                            "name": "person",
+                            "type": "GROUP",
+                            "layout": "layout_7CO4UL",
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;244:6733;60:336",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "layout": "layout_7CO4UL",
+                                "fills": "fill_JFT98D"
+                              },
+                              {
+                                "id": "I462:164746;255:6854;244:6733;60:340",
+                                "name": "person",
+                                "type": "IMAGE-SVG",
+                                "layout": "layout_8XFYQU",
+                                "fills": "Text"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I462:164746;255:6854;241:6621",
+                        "name": "Frame 2147236915",
+                        "type": "FRAME",
+                        "layout": "layout_2JCNIB",
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6854;241:6622",
+                            "name": "Menu",
+                            "type": "INSTANCE",
+                            "layout": "layout_927L0S",
+                            "componentId": "634:92696",
+                            "componentProperties": [
+                              {
+                                "name": "Property 1",
+                                "value": "cart empty",
+                                "type": "VARIANT"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6622;60:393",
+                                "name": "shopping_cart",
+                                "type": "GROUP",
+                                "layout": "layout_7CO4UL",
+                                "children": [
+                                  {
+                                    "id": "I462:164746;255:6854;241:6622;60:388",
+                                    "name": "Bounding box",
+                                    "type": "RECTANGLE",
+                                    "layout": "layout_7CO4UL",
+                                    "fills": "fill_JFT98D"
+                                  },
+                                  {
+                                    "id": "I462:164746;255:6854;241:6622;60:392",
+                                    "name": "shopping_cart",
+                                    "type": "IMAGE-SVG",
+                                    "layout": "layout_OGXF95",
+                                    "fills": "Text"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "I462:164746;255:6854;241:6623",
+                            "name": "Numbers",
+                            "type": "INSTANCE",
+                            "layout": "layout_S1BC1L",
+                            "borderRadius": "6px",
+                            "componentId": "291:42677",
+                            "componentProperties": [
+                              {
+                                "name": "Property 1",
+                                "value": "WarenkorbNumber",
+                                "type": "VARIANT"
+                              }
+                            ],
+                            "children": [
+                              {
+                                "id": "I462:164746;255:6854;241:6623;60:472",
+                                "name": "Typography",
+                                "type": "INSTANCE",
+                                "layout": "layout_CQ3LAV",
+                                "componentId": "291:42368",
+                                "componentProperties": [
+                                  {
+                                    "name": "Property 1",
+                                    "value": "Variant3",
+                                    "type": "VARIANT"
+                                  }
+                                ],
+                                "children": [
+                                  {
+                                    "id": "I462:164746;255:6854;241:6623;60:472;2:8895",
+                                    "name": "Typography",
+                                    "type": "TEXT",
+                                    "layout": "layout_9K5ITF",
+                                    "text": "0",
+                                    "textStyle": "style_O2QUR5",
+                                    "fills": "Selection"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "I462:164746;255:6996",
+            "name": "MenüGoodiesLeiste",
+            "type": "INSTANCE",
+            "layout": "layout_MXER8Y",
+            "fills": "Verlauf 2",
+            "borderRadius": "0px 0px 16px 16px",
+            "componentId": "462:161233",
+            "componentProperties": [
+              {
+                "name": "Property 1",
+                "value": "MeuLeisteBottomDT",
+                "type": "VARIANT"
+              }
+            ],
+            "children": [
+              {
+                "id": "I462:164746;255:6996;255:6966",
+                "name": "Logos",
+                "type": "INSTANCE",
+                "layout": "layout_TYEOUY",
+                "effects": "effect_1TUASN",
+                "componentId": "389:47697",
+                "componentProperties": [
+                  {
+                    "name": "Property 1",
+                    "value": "Variant7",
+                    "type": "VARIANT"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "I462:164746;255:6996;255:6966;219:5966",
+                    "name": "Union",
+                    "type": "BOOLEAN_OPERATION",
+                    "layout": "layout_87WCYF",
+                    "fills": "Base",
+                    "children": [
+                      {
+                        "id": "I462:164746;255:6996;255:6966;219:5967",
+                        "name": "oo",
+                        "type": "GROUP",
+                        "layout": "layout_YSG7MW",
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6996;255:6966;219:5968",
+                            "name": "Vector",
+                            "type": "IMAGE-SVG",
+                            "layout": "layout_EHJP5L",
+                            "fills": "Text"
+                          },
+                          {
+                            "id": "I462:164746;255:6996;255:6966;219:5969",
+                            "name": "Vector",
+                            "type": "IMAGE-SVG",
+                            "layout": "layout_OV50E9",
+                            "fills": "Text"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I462:164746;255:6996;255:6966;219:5970",
+                        "name": "Union",
+                        "type": "BOOLEAN_OPERATION",
+                        "layout": "layout_MS01VB",
+                        "fills": "Text",
+                        "children": [
+                          {
+                            "id": "I462:164746;255:6996;255:6966;219:5971",
+                            "name": "Vector",
+                            "type": "IMAGE-SVG",
+                            "layout": "layout_R2PZ9Y",
+                            "fills": "fill_70YV7M"
+                          },
+                          {
+                            "id": "I462:164746;255:6996;255:6966;219:5972",
+                            "name": "Vector",
+                            "type": "IMAGE-SVG",
+                            "layout": "layout_B1IKXT",
+                            "fills": "fill_70YV7M"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "I462:164746;255:6996;255:6967",
+                "name": "Typography",
+                "type": "INSTANCE",
+                "layout": "layout_KCCIBC",
+                "componentId": "291:42371",
+                "componentProperties": [
+                  {
+                    "name": "Property 1",
+                    "value": "Variant4",
+                    "type": "VARIANT"
+                  }
+                ],
+                "children": [
+                  {
+                    "id": "I462:164746;255:6996;255:6967;2:8965",
+                    "name": "Typography",
+                    "type": "TEXT",
+                    "layout": "layout_9K5ITF",
+                    "text": "Smarte GOODIES. Smart erklärt. Deine Extras. Deine Wahl.",
+                    "textStyle": "style_OH4M2Q",
+                    "fills": "Base"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "components": {
+      "634:92992": {
+        "id": "634:92992",
+        "key": "e21e167f40d5e4273e31651afc680710feb4b469",
+        "name": "Property 1=MenuLeisteDT Banner",
+        "componentSetId": "634:92991"
+      },
+      "634:92950": {
+        "id": "634:92950",
+        "key": "b3caaf0369fe21d9dde0082cc406a51907a69adc",
+        "name": "Property 1=MeuLeisteTopDT",
+        "componentSetId": "634:92947"
+      },
+      "634:92693": {
+        "id": "634:92693",
+        "key": "d44e9f97ac01b1ca349e32e417d63c28393f954d",
+        "name": "Property 1=menu",
+        "componentSetId": "634:92692"
+      },
+      "389:47691": {
+        "id": "389:47691",
+        "key": "98cc254876e65e956542795fdba6dcc907f90dd5",
+        "name": "Property 1=Default",
+        "componentSetId": "389:47690"
+      },
+      "634:92941": {
+        "id": "634:92941",
+        "key": "4d923a7b222a170fc23b0ecebbc21d6a8ce0251d",
+        "name": "Property 1=Variant2",
+        "componentSetId": "634:92939"
+      },
+      "359:88571": {
+        "id": "359:88571",
+        "key": "fe16e5fc2525670f73ee85f90994c93c656740d3",
+        "name": "Property 1=rechts",
+        "componentSetId": "359:88569"
+      },
+      "291:42371": {
+        "id": "291:42371",
+        "key": "854e0c6153ecd129afddff4cf04832820f3f4e4a",
+        "name": "Property 1=Variant4",
+        "componentSetId": "291:42361"
+      },
+      "107:20682": {
+        "id": "107:20682",
+        "key": "51d0265e293d81d1b76fa57c653762bfca5ba2ed",
+        "name": "Property 1=smarthome",
+        "componentSetId": "107:20679"
+      },
+      "634:92698": {
+        "id": "634:92698",
+        "key": "fb5850c5d14a1272de008b9d86b647912f887fa1",
+        "name": "Property 1=search",
+        "componentSetId": "634:92692"
+      },
+      "634:92700": {
+        "id": "634:92700",
+        "key": "36b21a1fd0db493f79cdd89cbb9fba2fda14cd16",
+        "name": "Property 1=info2",
+        "componentSetId": "634:92692"
+      },
+      "634:92694": {
+        "id": "634:92694",
+        "key": "33ab9f4d97b9de71b64d25e6fad32d2117eb7654",
+        "name": "Property 1=user logged out",
+        "componentSetId": "634:92692"
+      },
+      "634:92696": {
+        "id": "634:92696",
+        "key": "69cf5b77f3218c89a1f229f870a2a5fa3bb3e8d0",
+        "name": "Property 1=cart empty",
+        "componentSetId": "634:92692"
+      },
+      "291:42677": {
+        "id": "291:42677",
+        "key": "4f2734fcaf57d0d1a1585bb3dd77de0390f58701",
+        "name": "Property 1=WarenkorbNumber",
+        "componentSetId": "291:42673"
+      },
+      "291:42368": {
+        "id": "291:42368",
+        "key": "d20ab80a02b067fa54c847c371f063e736efb338",
+        "name": "Property 1=Variant3",
+        "componentSetId": "291:42361"
+      },
+      "462:161233": {
+        "id": "462:161233",
+        "key": "678af24e419cd19621af0282c69328e7f7b730f9",
+        "name": "Property 1=MeuLeisteBottomDT",
+        "componentSetId": "462:161232"
+      },
+      "389:47697": {
+        "id": "389:47697",
+        "key": "fcdc07e56acd6ee018319fbf2b96314d81d584db",
+        "name": "Property 1=Variant7",
+        "componentSetId": "389:47690"
+      }
+    },
+    "componentSets": {
+      "634:92991": {
+        "id": "634:92991",
+        "key": "4c38c01d2e28ecc371b57fe8b6dfaf75980ae232",
+        "name": "Component 4",
+        "description": ""
+      },
+      "634:92947": {
+        "id": "634:92947",
+        "key": "e3ca9ffd90f8ff4987756cae4c8bb44e07031789",
+        "name": "Frame 2147236913",
+        "description": ""
+      },
+      "634:92692": {
+        "id": "634:92692",
+        "key": "bf58a0d572fc2a4b0df51e2b775226f90c3e68c8",
+        "name": "Menu",
+        "description": ""
+      },
+      "389:47690": {
+        "id": "389:47690",
+        "key": "87c449cf4b16afa8b49339a398bcfa98fce60625",
+        "name": "Logos",
+        "description": ""
+      },
+      "634:92939": {
+        "id": "634:92939",
+        "key": "6d95e4df54145ae91d26522e2325d20f4260abd3",
+        "name": "Typography",
+        "description": ""
+      },
+      "359:88569": {
+        "id": "359:88569",
+        "key": "79c09d9ab5644ca1969b5b0dca23ffe3e7e1452b",
+        "name": "TextIconCombination",
+        "description": ""
+      },
+      "291:42361": {
+        "id": "291:42361",
+        "key": "5c9c18b3e072c7f8ecf6686dacd951cd4fae41c9",
+        "name": "Typography",
+        "description": ""
+      },
+      "107:20679": {
+        "id": "107:20679",
+        "key": "ea411f65294efda0e56b216cad8228063aa5bfc7",
+        "name": "Kategorien",
+        "description": ""
+      },
+      "291:42673": {
+        "id": "291:42673",
+        "key": "85bfccb835bff1244706c9a1fc74a1d9fb65e3f9",
+        "name": "Numbers",
+        "description": ""
+      },
+      "462:161232": {
+        "id": "462:161232",
+        "key": "8db3b513dfee04fea70b5d7d0a720af5267f0d45",
+        "name": "MenüGoodiesLeiste",
+        "description": ""
+      }
+    },
+    "globalVars": {
+      "styles": {
+        "layout_9S0H9E": {
+          "mode": "column",
+          "alignItems": "center",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "hug"
+          },
+          "dimensions": {
+            "width": 1440
+          }
+        },
+        "Shadow": {
+          "boxShadow": "0px 6px 12px 0px rgba(0, 0, 0, 0.03), 0px 4px 8px 0px rgba(0, 0, 0, 0.02)"
+        },
+        "layout_SWEFTL": {
+          "mode": "column",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "gap": "16px",
+          "padding": "16px",
+          "sizing": {
+            "horizontal": "fill",
+            "vertical": "hug"
+          }
+        },
+        "Base": [
+          "#FFFFFF"
+        ],
+        "layout_CSGYSP": {
+          "mode": "row",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "gap": "178px",
+          "sizing": {
+            "horizontal": "fill",
+            "vertical": "hug"
+          }
+        },
+        "layout_45S98R": {
+          "mode": "row",
+          "alignItems": "center",
+          "gap": "16px",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "layout_927L0S": {
+          "mode": "none",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "fixed"
+          },
+          "dimensions": {
+            "width": 24,
+            "height": 24
+          }
+        },
+        "layout_7CO4UL": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 0,
+            "y": 0
+          },
+          "dimensions": {
+            "width": 24,
+            "height": 24
+          }
+        },
+        "fill_JFT98D": [
+          "#D9D9D9"
+        ],
+        "layout_NB6QWY": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 3,
+            "y": 5
+          },
+          "dimensions": {
+            "width": 18,
+            "height": 14
+          }
+        },
+        "Text": [
+          "#151515"
+        ],
+        "layout_21W6MQ": {
+          "mode": "none",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "fixed"
+          },
+          "dimensions": {
+            "width": 158,
+            "height": 30
+          }
+        },
+        "layout_A7PB0J": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 0,
+            "y": 0
+          },
+          "dimensions": {
+            "width": 158,
+            "height": 19
+          }
+        },
+        "style_BCN5W4": {
+          "fontFamily": "Inter",
+          "fontWeight": 700,
+          "fontSize": 26.549171447753906,
+          "lineHeight": "1.450000043105269em",
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "CENTER"
+        },
+        "Highlight": [
+          "#DE5A13"
+        ],
+        "layout_F03UTY": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 94.25,
+            "y": 22.57
+          },
+          "dimensions": {
+            "width": 31.05,
+            "height": 7.43
+          }
+        },
+        "layout_XQIP2U": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 28.89,
+            "height": 7.43
+          }
+        },
+        "fill_70YV7M": [
+          "#FF6A00"
+        ],
+        "layout_TNR8EK": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 5.73,
+            "height": 6.61
+          }
+        },
+        "layout_LSJ6OX": {
+          "mode": "column",
+          "gap": "10px",
+          "padding": "0px 24px",
+          "sizing": {
+            "horizontal": "fill",
+            "vertical": "hug"
+          }
+        },
+        "layout_TRAWD1": {
+          "mode": "row",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "gap": "24px",
+          "padding": "16px",
+          "sizing": {
+            "horizontal": "fill",
+            "vertical": "fixed"
+          }
+        },
+        "layout_KCCIBC": {
+          "mode": "row",
+          "alignItems": "center",
+          "gap": "10px",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "layout_9K5ITF": {
+          "mode": "none",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "style_Q8JIS8": {
+          "fontFamily": "Inter",
+          "fontWeight": 500,
+          "fontSize": 16,
+          "lineHeight": "1.399999976158142em",
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP"
+        },
+        "layout_0ZG23Z": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 3,
+            "y": 3
+          },
+          "dimensions": {
+            "width": 18,
+            "height": 18
+          }
+        },
+        "layout_XGRDF5": {
+          "mode": "row",
+          "justifyContent": "flex-end",
+          "alignItems": "center",
+          "gap": "16px",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "layout_6JHMHH": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 2,
+            "y": 2
+          },
+          "dimensions": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "layout_8XFYQU": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 4,
+            "y": 4
+          },
+          "dimensions": {
+            "width": 16,
+            "height": 16
+          }
+        },
+        "layout_2JCNIB": {
+          "mode": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "layout_OGXF95": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 1,
+            "y": 2
+          },
+          "dimensions": {
+            "width": 19.98,
+            "height": 20
+          }
+        },
+        "layout_S1BC1L": {
+          "mode": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "12px",
+          "padding": "2px",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "fixed"
+          },
+          "dimensions": {
+            "width": 12,
+            "height": 12
+          }
+        },
+        "layout_CQ3LAV": {
+          "mode": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "10px",
+          "sizing": {
+            "horizontal": "hug",
+            "vertical": "hug"
+          }
+        },
+        "style_O2QUR5": {
+          "fontFamily": "Inter",
+          "fontWeight": 700,
+          "fontSize": 14,
+          "lineHeight": "1.4500000817435128em",
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "CENTER"
+        },
+        "Selection": [
+          "#D9D9D9"
+        ],
+        "layout_MXER8Y": {
+          "mode": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "gap": "16px",
+          "padding": "16px",
+          "sizing": {
+            "horizontal": "fill",
+            "vertical": "fixed"
+          }
+        },
+        "Verlauf 2": [
+          {
+            "type": "GRADIENT_LINEAR",
+            "gradient": "linear-gradient(90deg, rgba(222, 90, 19, 1) 0%, rgba(255, 136, 0, 1) 100%)"
+          }
+        ],
+        "layout_TYEOUY": {
+          "mode": "row",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "gap": "3.4285714626312256px",
+          "padding": "3.4285714626312256px",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "fixed"
+          },
+          "dimensions": {
+            "width": 24,
+            "height": 24
+          }
+        },
+        "effect_1TUASN": {
+          "boxShadow": "0px 2.5714285373687744px 5.142857074737549px 0px rgba(0, 0, 0, 0.03), 0px 1.7142857313156128px 3.4285714626312256px 0px rgba(0, 0, 0, 0.02)"
+        },
+        "layout_87WCYF": {
+          "mode": "none",
+          "sizing": {
+            "horizontal": "fixed",
+            "vertical": "fixed"
+          },
+          "dimensions": {
+            "width": 18,
+            "height": 14.88
+          }
+        },
+        "layout_YSG7MW": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 17.7,
+            "height": 8.67
+          }
+        },
+        "layout_EHJP5L": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 9.44,
+            "y": 0
+          },
+          "dimensions": {
+            "width": 8.26,
+            "height": 8.67
+          }
+        },
+        "layout_OV50E9": {
+          "mode": "none",
+          "sizing": {},
+          "locationRelativeToParent": {
+            "x": 0,
+            "y": 0
+          },
+          "dimensions": {
+            "width": 8.26,
+            "height": 8.67
+          }
+        },
+        "layout_MS01VB": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 18,
+            "height": 4.31
+          }
+        },
+        "layout_R2PZ9Y": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 16.75,
+            "height": 4.31
+          }
+        },
+        "layout_B1IKXT": {
+          "mode": "none",
+          "sizing": {},
+          "dimensions": {
+            "width": 3.32,
+            "height": 3.83
+          }
+        },
+        "style_OH4M2Q": {
+          "fontFamily": "Inter",
+          "fontWeight": 700,
+          "fontSize": 16,
+          "lineHeight": "1.399999976158142em",
+          "textAlignHorizontal": "LEFT",
+          "textAlignVertical": "TOP"
+        }
+      }
+    }
+  }
+}
