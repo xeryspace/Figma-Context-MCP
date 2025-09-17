@@ -6,17 +6,48 @@ import path from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import { spawnSync } from "child_process";
 
-const { mkdir, writeFile } = fsp;
+const { mkdir, writeFile, cp } = fsp;
 const DEPTH = 20;
-const VECTOR_TYPES = new Set([
-  "VECTOR",
-  "BOOLEAN_OPERATION",
-  "STAR",
-  "ELLIPSE",
-  "LINE",
-  "REGULAR_POLYGON",
-  "POLYGON",
-]);
+const SECONDARY_OUTPUT_ROOT =
+  process.env.CONVERTER_OUTPUT_DIR || "/Users/igormacevic/Documents/Repos/Converter/ToConvert";
+
+function isBooleanFalse(value) {
+  if (value === undefined || value === null) return false;
+  if (typeof value === "boolean") return value === false;
+  if (typeof value === "string") return value.toLowerCase() === "false";
+  if (typeof value === "object" && value !== null) {
+    if ("value" in value) return isBooleanFalse(value.value);
+  }
+  return false;
+}
+
+function isHiddenByComponentProperty(child, parentDoc) {
+  const references = child?.componentPropertyReferences;
+  const values = parentDoc?.componentPropertyValues;
+  if (!references || !values) {
+    return false;
+  }
+
+  const visibleRef = references.visible || references["visibleOn"];
+  if (visibleRef && visibleRef in values && isBooleanFalse(values[visibleRef])) {
+    return true;
+  }
+
+  for (const key of Object.keys(references)) {
+    const refId = references[key];
+    if (refId in values && isBooleanFalse(values[refId])) {
+      if (key.toLowerCase().includes("visible") || key.toLowerCase().includes("show")) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+function sanitizeNodeId(nodeId) {
+  return nodeId.replace(/[:\\/]/g, "-");
+}
 
 async function loadEnv(envPath) {
   try {
@@ -61,132 +92,6 @@ function parseFigmaUrl(rawUrl) {
   return { fileKey, nodeId };
 }
 
-function slugify(value, fallback) {
-  const normalized = (value || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return normalized || fallback;
-}
-
-function uniqueFileName(baseName, ext, usedNames) {
-  let candidate = `${baseName}.${ext}`;
-  let counter = 1;
-  while (usedNames.has(candidate)) {
-    candidate = `${baseName}-${counter}.${ext}`;
-    counter += 1;
-  }
-  usedNames.add(candidate);
-  return candidate;
-}
-
-function collectAssetEntries(rawDocument) {
-  const entries = new Map();
-  const usedNames = new Set();
-
-  function visit(node) {
-    if (!node || typeof node !== "object") return;
-    const sanitizedId = (node.id || "node").replace(/[^a-zA-Z0-9]+/g, "-");
-    const baseName = slugify(node.name, `node-${sanitizedId}`);
-
-    if (Array.isArray(node.fills)) {
-      for (const fill of node.fills) {
-        if (fill && fill.type === "IMAGE" && fill.visible !== false && fill.imageRef) {
-          const key = `fill:${fill.imageRef}`;
-          if (!entries.has(key)) {
-            const fileName = uniqueFileName(baseName, "png", usedNames);
-            entries.set(key, {
-              key,
-              type: "fill",
-              imageRef: fill.imageRef,
-              fileName,
-              nodeIds: new Set(),
-            });
-          }
-          entries.get(key).nodeIds.add(node.id);
-        }
-      }
-    }
-
-    if (VECTOR_TYPES.has(node.type) && !entries.has(`render:${node.id}`)) {
-      const ext = node.type === "IMAGE" ? "png" : "svg";
-      const fileName = uniqueFileName(baseName, ext, usedNames);
-      entries.set(`render:${node.id}`, {
-        key: `render:${node.id}`,
-        type: "render",
-        nodeId: node.id,
-        fileName,
-        nodeIds: new Set([node.id]),
-      });
-    }
-
-    if (Array.isArray(node.children)) {
-      for (const child of node.children) {
-        visit(child);
-      }
-    }
-  }
-
-  visit(rawDocument);
-  return Array.from(entries.values());
-}
-
-function orderDownloadItems(entries) {
-  const imageRefEntries = entries.filter((entry) => entry.type === "fill");
-  const renderEntries = entries.filter((entry) => entry.type === "render");
-
-  const svgEntries = renderEntries.filter((entry) => entry.fileName.toLowerCase().endsWith(".svg"));
-  const otherRenderEntries = renderEntries.filter(
-    (entry) => !entry.fileName.toLowerCase().endsWith(".svg"),
-  );
-
-  return [...imageRefEntries, ...otherRenderEntries, ...svgEntries];
-}
-
-function buildAssetRecords(entries, downloads, assetFolderName) {
-  const entryByFileName = new Map(entries.map((entry) => [entry.fileName, entry]));
-  const assetMap = new Map();
-
-  for (const result of downloads) {
-    if (!result) continue;
-    const fileName = path.basename(result.filePath);
-    const entry = entryByFileName.get(fileName);
-    if (!entry) continue;
-
-    const relativePath = path.posix.join(assetFolderName, fileName);
-    const usage = entry.type === "fill" ? "background" : "img";
-    const assetInfo = {
-      path: relativePath,
-      type: entry.type,
-      usage,
-      width: result.finalDimensions.width,
-      height: result.finalDimensions.height,
-      wasCropped: result.wasCropped,
-    };
-
-    for (const nodeId of entry.nodeIds) {
-      const list = assetMap.get(nodeId) || [];
-      list.push(assetInfo);
-      assetMap.set(nodeId, list);
-    }
-  }
-
-  return assetMap;
-}
-
-function mergeAssetInfo(targetNode, assetMap) {
-  if (!targetNode) return;
-  const assets = assetMap.get(targetNode.id);
-  if (assets && assets.length > 0) {
-    targetNode.assets = assets;
-  }
-  if (Array.isArray(targetNode.children)) {
-    for (const child of targetNode.children) {
-      mergeAssetInfo(child, assetMap);
-    }
-  }
-}
-
 function ensureDist(projectRoot) {
   const distIndex = path.join(projectRoot, "dist", "index.js");
   if (fs.existsSync(distIndex)) {
@@ -205,47 +110,100 @@ function ensureDist(projectRoot) {
   }
 }
 
-function extractAllNodes(node, depth = 0, nodes = []) {
-  if (!node || typeof node !== "object") {
-    return nodes;
-  }
+function buildTreeLines(root) {
+  const lines = [];
+  const depthCounts = new Map();
 
-  const nodeInfo = {
-    id: node.id || `unknown_${nodes.length}`,
-    name: node.name || `Node ${nodes.length}`,
-    type: node.type || "UNKNOWN",
-    depth,
-    componentId: node.componentId ?? null,
-    text: node.text ?? null,
-    hasChildren: Array.isArray(node.children) && node.children.length > 0,
-    childCount: Array.isArray(node.children) ? node.children.length : 0,
-  };
+  function traverse(current, depth, prefix, isLast) {
+    depthCounts.set(depth, (depthCounts.get(depth) || 0) + 1);
+    const label = `${current.name} (ID: ${current.id})`;
 
-  if (Object.prototype.hasOwnProperty.call(node, "layout")) nodeInfo.layout = node.layout;
-  if (Object.prototype.hasOwnProperty.call(node, "fills")) nodeInfo.fills = node.fills;
-  if (Object.prototype.hasOwnProperty.call(node, "effects")) nodeInfo.effects = node.effects;
-  if (Object.prototype.hasOwnProperty.call(node, "strokes")) nodeInfo.strokes = node.strokes;
-  if (Object.prototype.hasOwnProperty.call(node, "strokeWeight")) nodeInfo.strokeWeight = node.strokeWeight;
-  if (Object.prototype.hasOwnProperty.call(node, "borderRadius")) nodeInfo.borderRadius = node.borderRadius;
-  if (Object.prototype.hasOwnProperty.call(node, "textStyle")) nodeInfo.textStyle = node.textStyle;
-
-  nodes.push(nodeInfo);
-
-  if (Array.isArray(node.children)) {
-    for (const child of node.children) {
-      extractAllNodes(child, depth + 1, nodes);
+    if (depth === 0) {
+      lines.push(`📦 ${label}`);
+    } else {
+      lines.push(`${prefix}${isLast ? "└── " : "├── "}${label}`);
     }
+
+    const children = current.children || [];
+    const nextPrefix = depth === 0 ? "   " : `${prefix}${isLast ? "    " : "│   "}`;
+
+    children.forEach((child, index) => {
+      traverse(child, depth + 1, nextPrefix, index === children.length - 1);
+    });
   }
 
-  return nodes;
+  traverse(root, 0, "", true);
+
+  const counts = [];
+  for (const [depth, count] of depthCounts.entries()) {
+    counts.push({ depth, count });
+  }
+  counts.sort((a, b) => a.depth - b.depth);
+
+  return { lines, counts };
 }
 
-function summariseTypes(nodes) {
-  const counts = {};
-  for (const node of nodes) {
-    counts[node.type] = (counts[node.type] || 0) + 1;
+function composeMarkdown(metadata, lines, counts) {
+  const total = counts.reduce((sum, item) => sum + item.count, 0);
+  const rootCount = counts.find(({ depth }) => depth === 0)?.count ?? 1;
+  const levelLines = counts
+    .filter(({ depth }) => depth > 0)
+    .map(
+      ({ depth, count }) => `- **Level ${depth}**: ${count} component${count === 1 ? "" : "s"}`,
+    );
+
+  return `# Figma Components Tree
+
+## File Information
+- **Name**: ${metadata.name}
+- **Last Modified**: ${metadata.lastModified}
+- **Node ID**: ${metadata.rootNodeId}
+
+## Component Structure
+
+\`\`\`
+${lines.join("\n")}
+\`\`\`
+
+## Component Summary
+
+### Total Count
+- **Root**: ${rootCount} component${rootCount === 1 ? "" : "s"}
+${levelLines.join("\n")}
+- **Total Components**: ${total} component${total === 1 ? "" : "s"}
+`;
+}
+
+function composeJson(metadata, tree, counts) {
+  return {
+    metadata: {
+      url: metadata.url,
+      fileKey: metadata.fileKey,
+      rootNodeId: metadata.rootNodeId,
+      extractionDate: metadata.extractionDate,
+      totalComponents: counts.reduce((sum, item) => sum + item.count, 0),
+      levels: counts.map(({ depth, count }) => ({ depth, count })),
+    },
+    tree,
+  };
+}
+
+async function mirrorOutputDirectory(sourceDir, sanitizedNodeId) {
+  if (!SECONDARY_OUTPUT_ROOT) {
+    return { mirrored: false };
   }
-  return Object.entries(counts).sort((a, b) => b[1] - a[1]);
+
+  try {
+    await mkdir(SECONDARY_OUTPUT_ROOT, { recursive: true });
+    const destination = path.join(SECONDARY_OUTPUT_ROOT, sanitizedNodeId);
+    await mkdir(destination, { recursive: true });
+    await cp(sourceDir, destination, { recursive: true });
+    return { mirrored: true, destination };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.warn(`⚠️  Failed to mirror output to ${SECONDARY_OUTPUT_ROOT}: ${message}`);
+    return { mirrored: false, error: message };
+  }
 }
 
 async function main() {
@@ -275,7 +233,7 @@ async function main() {
   ensureDist(projectRoot);
 
   const distEntry = pathToFileURL(path.join(projectRoot, "dist", "index.js")).href;
-  const { FigmaService, simplifyRawFigmaObject, allExtractors } = await import(distEntry);
+  const { FigmaService } = await import(distEntry);
 
   const figmaService = new FigmaService({
     figmaApiKey,
@@ -283,156 +241,113 @@ async function main() {
     useOAuth,
   });
 
-  console.log("🚀 Universal Figma Tree Crawler");
-  console.log("================================\n");
-
+  console.log("🚀 Figma Component Tree Crawl");
+  console.log("===============================\n");
   console.log(`📁 File: ${fileKey}`);
   console.log(`🎨 Root: ${nodeId}`);
   console.log(`🔗 URL: ${figmaUrl}\n`);
 
-  console.log(`🌳 Fetching depth=${DEPTH} via get_figma_data pipeline...\n`);
+  console.log("🌳 Fetching component tree...\n");
 
-  const rawResponse = await figmaService.getRawNode(fileKey, nodeId, DEPTH);
-  const simplified = simplifyRawFigmaObject(rawResponse, allExtractors, { maxDepth: DEPTH });
+  // Fetch entire tree at once with depth for better performance
+  const initialResponse = await figmaService.getRawNode(fileKey, nodeId, DEPTH);
+  const rootDocument = initialResponse?.nodes?.[nodeId]?.document;
 
-  const allNodes = [];
-  const simplifiedRoots = Array.isArray(simplified.nodes) ? simplified.nodes : [];
-  for (const rootNode of simplifiedRoots) {
-    extractAllNodes(rootNode, 0, allNodes);
+  if (!rootDocument) {
+    throw new Error("Unable to locate root node in Figma response");
   }
 
-  if (allNodes.length === 0) {
-    const rawNode = rawResponse?.nodes?.[nodeId]?.document;
-    if (rawNode) {
-      extractAllNodes(rawNode, 0, allNodes);
+  const lastModified = initialResponse.lastModified || new Date().toISOString();
+
+  function expand(nodeDoc, parentDoc = null) {
+    // Skip if node itself is hidden
+    if (nodeDoc.visible === false) {
+      console.log(`ℹ️  Skipping hidden node ${nodeDoc.id} (${nodeDoc.name})`);
+      return null;
     }
-  }
 
-  if (allNodes.length === 0) {
-    console.warn("⚠️ No nodes were returned. Check the node-id and authentication.");
-  }
+    const childrenDocs = Array.isArray(nodeDoc.children) ? nodeDoc.children : [];
+    const expandedChildren = [];
 
-  const sanitizedNodeId = nodeId.replace(/[:\\/]/g, "-");
-  const outputDir = path.join(projectRoot, "Figma_Components", sanitizedNodeId);
-  await mkdir(outputDir, { recursive: true });
-  const assetsDir = path.join(outputDir, "assets");
-  const assetFolderName = path.basename(assetsDir);
-
-  let assetMap = new Map();
-  let assetCount = 0;
-  const rawDocument = rawResponse?.nodes?.[nodeId]?.document;
-
-  if (rawDocument) {
-    const assetEntries = collectAssetEntries(rawDocument);
-    if (assetEntries.length > 0) {
-      console.log(`🖼️ Preparing ${assetEntries.length} asset(s) for download...`);
-      await mkdir(assetsDir, { recursive: true });
-      const orderedEntries = orderDownloadItems(assetEntries);
-      const downloadItems = orderedEntries.map((entry) =>
-        entry.type === "fill"
-          ? { imageRef: entry.imageRef, fileName: entry.fileName }
-          : { nodeId: entry.nodeId, fileName: entry.fileName },
-      );
-
-      const downloads = await figmaService.downloadImages(
-        fileKey,
-        assetsDir,
-        downloadItems,
-        { pngScale: 2 },
-      );
-
-      assetMap = buildAssetRecords(orderedEntries, downloads, assetFolderName);
-      assetCount = downloads.length;
-
-      for (const node of allNodes) {
-        const assets = assetMap.get(node.id);
-        if (assets && assets.length > 0) {
-          node.assets = assets;
-        }
+    for (const child of childrenDocs) {
+      // Check if child is hidden by visibility property
+      if (child.visible === false) {
+        console.log(`ℹ️  Skipping hidden child ${child.id} (${child.name})`);
+        continue;
       }
 
-      if (Array.isArray(simplified.nodes)) {
-        for (const rootNode of simplified.nodes) {
-          mergeAssetInfo(rootNode, assetMap);
-        }
+      // Check if child is hidden by component property
+      if (isHiddenByComponentProperty(child, nodeDoc)) {
+        console.log(`ℹ️  Skipping node ${child.id} (${child.name}) hidden by component property`);
+        continue;
       }
-    } else {
-      console.log("ℹ️ No assets detected for this selection.");
+
+      // Child data is already inline in the response when using depth parameter
+      // Recursively expand it
+      const expanded = expand(child, nodeDoc);
+      if (expanded) {
+        expandedChildren.push(expanded);
+      }
     }
-  } else {
-    console.warn("⚠️ Could not resolve raw node document; skipping asset extraction.");
+
+    return {
+      id: nodeDoc.id,
+      name: nodeDoc.name || nodeDoc.type || "Unnamed",
+      type: nodeDoc.type || "UNKNOWN",
+      children: expandedChildren,
+    };
   }
+
+  const tree = expand(rootDocument);
+  const { lines, counts } = buildTreeLines(tree);
 
   const metadata = {
+    name: rootDocument.name || "Unnamed Component",
+    lastModified,
+    rootNodeId: nodeId,
     url: figmaUrl,
     fileKey,
-    rootNodeId: nodeId,
     extractionDate: new Date().toISOString(),
-    totalNodes: allNodes.length,
-    maxDepth: allNodes.reduce((max, node) => (node.depth > max ? node.depth : max), 0),
-    tool: "1-figma-crawl.js",
-    version: "1.1.0",
-    method: "figma_service_depth_20",
-    assetsDownloaded: assetCount,
-    assetsDirectory: assetCount > 0 ? path.posix.join(sanitizedNodeId, assetFolderName) : null,
   };
 
-  const output = {
-    metadata,
-    nodes: allNodes,
-    simplified,
-  };
+  const markdown = composeMarkdown(metadata, lines, counts);
 
-  const outputFile = path.join(outputDir, "deterministic_nodes.json");
-  await writeFile(outputFile, JSON.stringify(output, null, 2), "utf8");
+  const sanitizedNodeId = sanitizeNodeId(nodeId);
+  const outputDir = path.join(projectRoot, "Figma_Components", sanitizedNodeId);
+  await mkdir(outputDir, { recursive: true });
 
-  const instructionsFile = path.join(outputDir, "MCP_INTEGRATION.md");
-  const instructionsContent = `# MCP Integration Notes
+  const markdownPath = path.join(outputDir, "component-tree.md");
 
-This crawl uses the repository's built-in \`get_figma_data\` pipeline:
+  await writeFile(markdownPath, markdown, "utf8");
 
-- Depth: ${DEPTH}
-- File key: ${fileKey}
-- Root node: ${nodeId}
-- Auth: ${useOAuth ? "OAuth bearer" : "Personal access token"}
+  const instructions = `# Component Tree Export
 
-Ensure \`FIGMA_API_KEY\` or \`FIGMA_OAUTH_TOKEN\` is set before running:
+This directory contains a deterministic snapshot of the Figma component tree.
 
-\`\`\`
-FIGMA_API_KEY=your-figma-token
-# or
-FIGMA_OAUTH_TOKEN=your-oauth-token
-\`\`\`
+- **Source URL**: ${figmaUrl}
+- **Root Node**: ${nodeId}
+- **Depth**: ${DEPTH}
+- **Generated**: ${metadata.extractionDate}
 
-Assets downloaded automatically into \`${path.posix.join(sanitizedNodeId, assetFolderName)}\`.
-
-Run again with the same command if you need to refresh the data.
+Files:
+- \`component-tree.md\`: human-readable tree structure
 `;
-  await writeFile(instructionsFile, instructionsContent, "utf8");
 
-  console.log("\n" + "=".repeat(50));
-  console.log("✅ Extraction complete!");
-  console.log("=".repeat(50));
-  console.log(`📊 Total nodes: ${metadata.totalNodes}`);
-  console.log(`📏 Max depth: ${metadata.maxDepth}`);
-  if (assetCount > 0) {
-    const assetDisplayPath = path.relative(projectRoot, path.join(outputDir, assetFolderName));
-    console.log(`🖼️ Assets downloaded: ${assetCount} → ${assetDisplayPath}`);
-  } else {
-    console.log("🖼️ Assets downloaded: 0");
+  await writeFile(path.join(outputDir, "README.md"), instructions, "utf8");
+
+  const mirrorResult = await mirrorOutputDirectory(outputDir, sanitizedNodeId);
+  if (mirrorResult.mirrored) {
+    console.log(`🗂️  Mirrored output to ${mirrorResult.destination}`);
   }
 
-  const typeSummary = summariseTypes(allNodes);
-  if (typeSummary.length > 0) {
-    console.log("\n📈 Node types:");
-    for (const [type, count] of typeSummary) {
-      console.log(`  ${type}: ${count}`);
-    }
-  }
-
-  console.log(`\n📄 Output saved to: ${outputFile}`);
-  console.log(`📄 Integration notes: ${instructionsFile}`);
-  console.log("\n✨ Script works with any Figma URL containing a node-id.\n");
+  console.log("\n" + "=".repeat(40));
+  console.log("✅ Tree extraction complete!");
+  console.log("=".repeat(40));
+  counts.forEach(({ depth, count }) => {
+    console.log(`Level ${depth}: ${count} component${count === 1 ? "" : "s"}`);
+  });
+  console.log(`Total: ${counts.reduce((sum, item) => sum + item.count, 0)} components`);
+  console.log(`\n📄 Markdown: ${markdownPath}`);
 }
 
 main().catch((error) => {

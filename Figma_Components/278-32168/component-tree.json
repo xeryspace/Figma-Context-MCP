@@ -1,0 +1,574 @@
+{
+  "metadata": {
+    "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=278-32168&t=881GHX8GmV9kcRVQ-4",
+    "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
+    "rootNodeId": "278:32168",
+    "extractionDate": "2025-09-17T10:01:01.215Z",
+    "totalComponents": 81,
+    "levels": [
+      {
+        "depth": 0,
+        "count": 1
+      },
+      {
+        "depth": 1,
+        "count": 4
+      },
+      {
+        "depth": 2,
+        "count": 8
+      },
+      {
+        "depth": 3,
+        "count": 16
+      },
+      {
+        "depth": 4,
+        "count": 16
+      },
+      {
+        "depth": 5,
+        "count": 18
+      },
+      {
+        "depth": 6,
+        "count": 10
+      },
+      {
+        "depth": 7,
+        "count": 8
+      }
+    ]
+  },
+  "tree": {
+    "id": "278:32168",
+    "name": "Frame 2147236997",
+    "type": "FRAME",
+    "children": [
+      {
+        "id": "278:33505",
+        "name": "Überschrift",
+        "type": "INSTANCE",
+        "children": [
+          {
+            "id": "I278:33505;54:188",
+            "name": "Typography",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:33505;54:188;1:9",
+                "name": "Typography",
+                "type": "TEXT",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "278:32245",
+        "name": "HeaderImage",
+        "type": "INSTANCE",
+        "children": [
+          {
+            "id": "I278:32245;137:8081",
+            "name": "image",
+            "type": "RECTANGLE",
+            "children": []
+          },
+          {
+            "id": "I278:32245;137:8082",
+            "name": "Rectangle 503",
+            "type": "RECTANGLE",
+            "children": []
+          },
+          {
+            "id": "I278:32245;137:8163",
+            "name": "Frame 2147236924",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:32245;137:8163;137:8122",
+                "name": "Typography",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32245;137:8163;137:8122;73:4546",
+                    "name": "Typography",
+                    "type": "TEXT",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "I278:32245;137:8163;137:8123",
+                "name": "Typography",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32245;137:8163;137:8123;1:11",
+                    "name": "Typography",
+                    "type": "TEXT",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "I278:32245;137:8163;137:8124",
+                "name": "Frame 2147236924",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32245;137:8163;137:8124;30:257",
+                    "name": "Kategorien",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32245;137:8163;137:8124;30:257;6:147",
+                        "name": "home_speaker",
+                        "type": "GROUP",
+                        "children": [
+                          {
+                            "id": "I278:32245;137:8163;137:8124;30:257;6:148",
+                            "name": "Bounding box",
+                            "type": "RECTANGLE",
+                            "children": []
+                          },
+                          {
+                            "id": "I278:32245;137:8163;137:8124;30:257;6:149",
+                            "name": "home_speaker",
+                            "type": "VECTOR",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32245;137:8163;137:8124;30:258",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32245;137:8163;137:8124;30:258;2:8965",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "278:32164",
+        "name": "Frame 2147236996",
+        "type": "FRAME",
+        "children": [
+          {
+            "id": "278:32114",
+            "name": "HeaderImage",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:32114;137:7927",
+                "name": "image",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32114;137:7928",
+                "name": "Rectangle 503",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32114;137:8189",
+                "name": "Frame 2147236924",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32114;137:8189;137:8122",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32114;137:8189;137:8122;73:4546",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32114;137:8189;137:8123",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32114;137:8189;137:8123;1:11",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32114;137:8189;137:8124",
+                    "name": "Frame 2147236924",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32114;137:8189;137:8124;30:257",
+                        "name": "Kategorien",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32114;137:8189;137:8124;30:257;6:147",
+                            "name": "home_speaker",
+                            "type": "GROUP",
+                            "children": [
+                              {
+                                "id": "I278:32114;137:8189;137:8124;30:257;6:148",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "children": []
+                              },
+                              {
+                                "id": "I278:32114;137:8189;137:8124;30:257;6:149",
+                                "name": "home_speaker",
+                                "type": "VECTOR",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I278:32114;137:8189;137:8124;30:258",
+                        "name": "Typography",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32114;137:8189;137:8124;30:258;2:8965",
+                            "name": "Typography",
+                            "type": "TEXT",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "278:32127",
+            "name": "HeaderImage",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:32127;137:7927",
+                "name": "image",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32127;137:7928",
+                "name": "Rectangle 503",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32127;137:8189",
+                "name": "Frame 2147236924",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32127;137:8189;137:8122",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32127;137:8189;137:8122;73:4546",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32127;137:8189;137:8123",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32127;137:8189;137:8123;1:11",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32127;137:8189;137:8124",
+                    "name": "Frame 2147236924",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32127;137:8189;137:8124;30:257",
+                        "name": "Kategorien",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32127;137:8189;137:8124;30:257;6:147",
+                            "name": "home_speaker",
+                            "type": "GROUP",
+                            "children": [
+                              {
+                                "id": "I278:32127;137:8189;137:8124;30:257;6:148",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "children": []
+                              },
+                              {
+                                "id": "I278:32127;137:8189;137:8124;30:257;6:149",
+                                "name": "home_speaker",
+                                "type": "VECTOR",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I278:32127;137:8189;137:8124;30:258",
+                        "name": "Typography",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32127;137:8189;137:8124;30:258;2:8965",
+                            "name": "Typography",
+                            "type": "TEXT",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "278:32197",
+        "name": "Frame 2147236997",
+        "type": "FRAME",
+        "children": [
+          {
+            "id": "278:32198",
+            "name": "HeaderImage",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:32198;73:4556",
+                "name": "image",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32198;73:4557",
+                "name": "Rectangle 503",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32198;137:8202",
+                "name": "Frame 2147236924",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32198;137:8202;137:8122",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32198;137:8202;137:8122;73:4546",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32198;137:8202;137:8123",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32198;137:8202;137:8123;1:11",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32198;137:8202;137:8124",
+                    "name": "Frame 2147236924",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32198;137:8202;137:8124;30:257",
+                        "name": "Kategorien",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32198;137:8202;137:8124;30:257;6:147",
+                            "name": "home_speaker",
+                            "type": "GROUP",
+                            "children": [
+                              {
+                                "id": "I278:32198;137:8202;137:8124;30:257;6:148",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "children": []
+                              },
+                              {
+                                "id": "I278:32198;137:8202;137:8124;30:257;6:149",
+                                "name": "home_speaker",
+                                "type": "VECTOR",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I278:32198;137:8202;137:8124;30:258",
+                        "name": "Typography",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32198;137:8202;137:8124;30:258;2:8965",
+                            "name": "Typography",
+                            "type": "TEXT",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "278:32199",
+            "name": "HeaderImage",
+            "type": "INSTANCE",
+            "children": [
+              {
+                "id": "I278:32199;73:4570",
+                "name": "image",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32199;73:4571",
+                "name": "Rectangle 503",
+                "type": "RECTANGLE",
+                "children": []
+              },
+              {
+                "id": "I278:32199;137:8176",
+                "name": "Frame 2147236924",
+                "type": "INSTANCE",
+                "children": [
+                  {
+                    "id": "I278:32199;137:8176;137:8122",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32199;137:8176;137:8122;73:4546",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32199;137:8176;137:8123",
+                    "name": "Typography",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32199;137:8176;137:8123;1:11",
+                        "name": "Typography",
+                        "type": "TEXT",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "I278:32199;137:8176;137:8124",
+                    "name": "Frame 2147236924",
+                    "type": "INSTANCE",
+                    "children": [
+                      {
+                        "id": "I278:32199;137:8176;137:8124;30:257",
+                        "name": "Kategorien",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32199;137:8176;137:8124;30:257;6:147",
+                            "name": "home_speaker",
+                            "type": "GROUP",
+                            "children": [
+                              {
+                                "id": "I278:32199;137:8176;137:8124;30:257;6:148",
+                                "name": "Bounding box",
+                                "type": "RECTANGLE",
+                                "children": []
+                              },
+                              {
+                                "id": "I278:32199;137:8176;137:8124;30:257;6:149",
+                                "name": "home_speaker",
+                                "type": "VECTOR",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I278:32199;137:8176;137:8124;30:258",
+                        "name": "Typography",
+                        "type": "INSTANCE",
+                        "children": [
+                          {
+                            "id": "I278:32199;137:8176;137:8124;30:258;2:8965",
+                            "name": "Typography",
+                            "type": "TEXT",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
