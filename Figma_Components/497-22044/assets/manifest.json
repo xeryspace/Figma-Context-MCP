@@ -1,0 +1,76 @@
+{
+  "totalAssets": 14,
+  "generatedAt": "2025-09-17T14:10:33.870Z",
+  "assets": {
+    "I497:22044;255:6854;241:6618": {
+      "path": "./assets/logos.png",
+      "name": "logos",
+      "type": "INSTANCE"
+    },
+    "I497:22044;255:6996;255:6966": {
+      "path": "./assets/logos.png",
+      "name": "logos",
+      "type": "INSTANCE"
+    },
+    "I497:22044;255:6854;241:6617;60:334": {
+      "path": "./assets/dehaze.svg",
+      "name": "dehaze",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;241:6618;25:168": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;241:6618;25:169": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;241:6624;294:6841": {
+      "path": "./assets/texticoncombination.svg",
+      "name": "texticoncombination",
+      "type": "INSTANCE"
+    },
+    "I497:22044;255:6854;241:6624;60:440;60:412": {
+      "path": "./assets/search.svg",
+      "name": "search",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;244:6742;262:7294": {
+      "path": "./assets/info.svg",
+      "name": "info",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;244:6733;60:340": {
+      "path": "./assets/person.svg",
+      "name": "person",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6854;241:6622;60:392": {
+      "path": "./assets/shopping_cart.svg",
+      "name": "shopping_cart",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6996;255:6966;219:5968": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6996;255:6966;219:5969": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6996;255:6966;219:5971": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I497:22044;255:6996;255:6966;219:5972": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    }
+  }
+}

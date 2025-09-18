@@ -1,0 +1,56 @@
+{
+  "totalAssets": 10,
+  "generatedAt": "2025-09-17T15:41:54.623Z",
+  "assets": {
+    "I524:52174;253:6203": {
+      "path": "./assets/image_26.png",
+      "name": "image_26",
+      "type": "RECTANGLE"
+    },
+    "I524:52174;253:6211;148:5350": {
+      "path": "./assets/vector_19.svg",
+      "name": "vector_19",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6218": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6221;67:4529;67:4511": {
+      "path": "./assets/star.svg",
+      "name": "star",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6221;67:4517;67:4511": {
+      "path": "./assets/star.svg",
+      "name": "star",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6221;67:4525;67:4511": {
+      "path": "./assets/star.svg",
+      "name": "star",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6221;67:4521;67:4495": {
+      "path": "./assets/star_half.svg",
+      "name": "star_half",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6221;67:4513;67:4489": {
+      "path": "./assets/star.svg",
+      "name": "star",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6227;44:186;164:5465": {
+      "path": "./assets/delivery_truck_speed.svg",
+      "name": "delivery_truck_speed",
+      "type": "VECTOR"
+    },
+    "I524:52174;253:6230;31:302;151:5387": {
+      "path": "./assets/add_shopping_cart.svg",
+      "name": "add_shopping_cart",
+      "type": "VECTOR"
+    }
+  }
+}

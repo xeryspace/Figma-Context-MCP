@@ -18,6 +18,8 @@ const CONFIG = {
   INCLUDE_RAW_DATA: false,  // Don't include raw Figma data
   ESSENTIAL_ONLY: true,     // Only include essential CSS properties
   MIN_CSS_PROPERTIES: 3,    // Minimum CSS properties to include a node
+  DOWNLOAD_ASSETS: true,    // Download SVG and PNG assets
+  PNG_SCALE: 2,             // Scale for PNG exports (2x for retina)
 };
 
 function isBooleanFalse(value) {
@@ -436,7 +438,8 @@ function buildEnhancedTreeLines(root, styleMap) {
   function traverse(current, depth, prefix, isLast) {
     depthCounts.set(depth, (depthCounts.get(depth) || 0) + 1);
     const styleInfo = styleMap.get(current.id) || '';
-    const label = `${current.name} (ID: ${current.id})${styleInfo}`;
+    const assetLink = current.assetPath ? ` 🔗 ${current.assetPath}` : '';
+    const label = `${current.name} (ID: ${current.id})${styleInfo}${assetLink}`;
 
     if (depth === 0) {
       lines.push(`📦 ${label}`);
@@ -641,8 +644,9 @@ Files:
   // Enhancement phase
   console.log("\n🎨 Enhancing tree with styling information...");
 
-  // Collect strategic nodes for enhancement
+  // Collect strategic nodes for enhancement and assets to download
   const nodesToEnhance = new Set();
+  const assetsToDownload = new Map(); // nodeId -> asset info
 
   function collectStrategicNodes(node, depth = 0) {
     // Always enhance root and first 2 levels
@@ -663,6 +667,29 @@ Files:
       nodesToEnhance.add(node.id);
     }
 
+    // Collect assets (icons, images)
+    if (CONFIG.DOWNLOAD_ASSETS) {
+      if (node.type === 'VECTOR' ||
+          node.type === 'RECTANGLE' && node.fills?.some(f => f.type === 'IMAGE') ||
+          node.name?.toLowerCase().includes('icon') ||
+          node.name?.toLowerCase().includes('logo') ||
+          node.name?.toLowerCase().includes('image')) {
+
+        // Generate a clean filename
+        const cleanName = node.name
+          .replace(/[^a-zA-Z0-9-_]/g, '_')
+          .replace(/_+/g, '_')
+          .toLowerCase();
+
+        assetsToDownload.set(node.id, {
+          name: cleanName || `asset_${node.id.replace(/[:;]/g, '_')}`,
+          type: node.type,
+          isVector: node.type === 'VECTOR' || node.name?.toLowerCase().includes('icon'),
+          hasImageFill: node.fills?.some(f => f.type === 'IMAGE')
+        });
+      }
+    }
+
     // Recursively collect from children
     if (node.children) {
       node.children.forEach(child => collectStrategicNodes(child, depth + 1));
@@ -671,6 +698,9 @@ Files:
 
   collectStrategicNodes(tree);
   console.log(`📊 Enhancing ${nodesToEnhance.size} strategic nodes...`);
+  if (CONFIG.DOWNLOAD_ASSETS) {
+    console.log(`🖼️  Found ${assetsToDownload.size} assets to download...`);
+  }
 
   // Fetch detailed data for strategic nodes
   const styleMap = new Map();
@@ -692,13 +722,149 @@ Files:
     }
   }
 
-  // Build enhanced tree
+  // Download assets if enabled
+  const assetPaths = new Map(); // nodeId -> relative path
+
+  if (CONFIG.DOWNLOAD_ASSETS && assetsToDownload.size > 0) {
+    console.log(`\n⬇️  Downloading assets...`);
+
+    const assetsDir = path.join(outputDir, 'assets');
+    await mkdir(assetsDir, { recursive: true });
+
+    // Separate assets by format
+    const pngAssets = [];
+    const svgAssets = [];
+
+    for (const [nodeId, assetInfo] of assetsToDownload.entries()) {
+      if (assetInfo.isVector) {
+        svgAssets.push({ nodeId, assetInfo });
+      } else {
+        pngAssets.push({ nodeId, assetInfo });
+      }
+    }
+
+    // Download PNG assets
+    if (pngAssets.length > 0) {
+      try {
+        const nodeIds = pngAssets.map(({ nodeId }) => nodeId);
+        const pngUrls = await figmaService.getNodeRenderUrls(fileKey, nodeIds, 'png', { pngScale: CONFIG.PNG_SCALE });
+
+        for (const { nodeId, assetInfo } of pngAssets) {
+          if (pngUrls[nodeId]) {
+            try {
+              const fileName = `${assetInfo.name}.png`;
+              const filePath = path.join(assetsDir, fileName);
+
+              // Download the image
+              const response = await fetch(pngUrls[nodeId]);
+              if (response.ok) {
+                const buffer = await response.arrayBuffer();
+                await writeFile(filePath, Buffer.from(buffer));
+                assetPaths.set(nodeId, `./assets/${fileName}`);
+                console.log(`  ✅ Downloaded: ${fileName}`);
+              } else {
+                console.log(`  ⚠️  Failed to download: ${assetInfo.name}`);
+              }
+            } catch (downloadError) {
+              console.log(`  ⚠️  Error downloading ${assetInfo.name}: ${downloadError.message}`);
+            }
+          } else {
+            console.log(`  ⚠️  No URL available for: ${assetInfo.name}`);
+          }
+        }
+      } catch (error) {
+        console.log(`  ⚠️  Error fetching PNG URLs: ${error.message}`);
+      }
+    }
+
+    // Download SVG assets
+    if (svgAssets.length > 0) {
+      try {
+        const nodeIds = svgAssets.map(({ nodeId }) => nodeId);
+        const svgUrls = await figmaService.getNodeRenderUrls(fileKey, nodeIds, 'svg');
+
+        for (const { nodeId, assetInfo } of svgAssets) {
+          if (svgUrls[nodeId]) {
+            try {
+              const fileName = `${assetInfo.name}.svg`;
+              const filePath = path.join(assetsDir, fileName);
+
+              // Download the image
+              const response = await fetch(svgUrls[nodeId]);
+              if (response.ok) {
+                const buffer = await response.arrayBuffer();
+                await writeFile(filePath, Buffer.from(buffer));
+                assetPaths.set(nodeId, `./assets/${fileName}`);
+                console.log(`  ✅ Downloaded: ${fileName}`);
+              } else {
+                console.log(`  ⚠️  Failed to download: ${assetInfo.name}`);
+              }
+            } catch (downloadError) {
+              console.log(`  ⚠️  Error downloading ${assetInfo.name}: ${downloadError.message}`);
+            }
+          } else {
+            console.log(`  ⚠️  No URL available for: ${assetInfo.name}`);
+          }
+        }
+      } catch (error) {
+        console.log(`  ⚠️  Error fetching SVG URLs: ${error.message}`);
+      }
+    }
+
+    // Handle image fills separately if needed
+    const imageFillNodes = [];
+    for (const [nodeId, assetInfo] of assetsToDownload.entries()) {
+      const enhancedData = enhancedNodes.get(nodeId);
+      if (enhancedData?.fills?.some(f => f.type === 'IMAGE' && f.imageRef)) {
+        imageFillNodes.push({ nodeId, assetInfo, enhancedData });
+      }
+    }
+
+    if (imageFillNodes.length > 0) {
+      try {
+        const imageFillUrls = await figmaService.getImageFillUrls(fileKey);
+
+        for (const { nodeId, assetInfo, enhancedData } of imageFillNodes) {
+          const imageFill = enhancedData.fills.find(f => f.type === 'IMAGE' && f.imageRef);
+          if (imageFill && imageFillUrls[imageFill.imageRef]) {
+            try {
+              const fileName = `${assetInfo.name}_fill.png`;
+              const filePath = path.join(assetsDir, fileName);
+
+              // Download the image
+              const response = await fetch(imageFillUrls[imageFill.imageRef]);
+              if (response.ok) {
+                const buffer = await response.arrayBuffer();
+                await writeFile(filePath, Buffer.from(buffer));
+                assetPaths.set(nodeId, `./assets/${fileName}`);
+                console.log(`  ✅ Downloaded image fill: ${fileName}`);
+              }
+            } catch (downloadError) {
+              console.log(`  ⚠️  Error downloading image fill for ${assetInfo.name}: ${downloadError.message}`);
+            }
+          }
+        }
+      } catch (error) {
+        console.log(`  ⚠️  Error fetching image fill URLs: ${error.message}`);
+      }
+    }
+
+    console.log(`\n✅ Downloaded ${assetPaths.size} assets`);
+  }
+
+  // Build enhanced tree with asset paths
   function enhanceTree(node) {
     const enhanced = enhancedNodes.get(node.id);
     if (enhanced) {
       // Merge enhanced data
       node.type = enhanced.type || node.type;
       node.name = enhanced.name || node.name;
+    }
+
+    // Add asset path if available
+    const assetPath = assetPaths.get(node.id);
+    if (assetPath) {
+      node.assetPath = assetPath;
     }
 
     if (node.children) {
@@ -939,6 +1105,28 @@ ${counts.map(({ depth, count }) => `- **Level ${depth}**: ${count} component${co
   const lookupJsonPath = path.join(outputDir, "component-lookup.json");
   await writeFile(lookupJsonPath, JSON.stringify(componentLookup, null, 2), "utf8");
 
+  // Write asset manifest if assets were downloaded
+  if (CONFIG.DOWNLOAD_ASSETS && assetPaths.size > 0) {
+    const assetManifest = {
+      totalAssets: assetPaths.size,
+      generatedAt: new Date().toISOString(),
+      assets: Object.fromEntries(
+        Array.from(assetPaths.entries()).map(([nodeId, path]) => [
+          nodeId,
+          {
+            path: path,
+            name: assetsToDownload.get(nodeId)?.name,
+            type: assetsToDownload.get(nodeId)?.type
+          }
+        ])
+      )
+    };
+
+    const manifestPath = path.join(outputDir, "assets", "manifest.json");
+    await writeFile(manifestPath, JSON.stringify(assetManifest, null, 2), "utf8");
+    console.log(`📝 Asset manifest: ${manifestPath}`);
+  }
+
   console.log(`\n✨ Enhanced tree created!`);
   console.log(`📄 Enhanced: ${enhancedPath}`);
   console.log(`📦 Essential Styles: ${essentialJsonPath}`);
@@ -958,15 +1146,18 @@ This directory contains a deterministic snapshot of the Figma component tree.
 
 Files:
 - \`component-tree.md\`: Basic tree structure
-- \`component-tree-enhanced.md\`: Tree with inline CSS styling (PRIMARY - use this!)
+- \`component-tree-enhanced.md\`: Tree with inline CSS styling and asset links (PRIMARY - use this!)
 - \`styles-essential.json\`: Compact style data with color palette and typography
 - \`component-lookup.json\`: Quick reference table for all components
+- \`assets/\`: Downloaded SVG and PNG files for icons and images
+- \`assets/manifest.json\`: Asset mapping and metadata
 
 ## Usage Priority for AI/Conversion:
 
-1. **PRIMARY**: Use \`component-tree-enhanced.md\` - Has all styling inline
-2. **REFERENCE**: Use \`styles-essential.json\` for color palette and typography
-3. **LOOKUP**: Use \`component-lookup.json\` for finding components by ID
+1. **PRIMARY**: Use \`component-tree-enhanced.md\` - Has all styling inline + asset links
+2. **ASSETS**: Use files in \`assets/\` folder referenced by the tree
+3. **REFERENCE**: Use \`styles-essential.json\` for color palette and typography
+4. **LOOKUP**: Use \`component-lookup.json\` for finding components by ID
 `;
 
   await writeFile(path.join(outputDir, "README.md"), updatedInstructions, "utf8");
@@ -980,10 +1171,20 @@ Files:
     await writeFile(essentialMirrorPath, JSON.stringify(essentialData, null, 2), "utf8");
     await writeFile(lookupMirrorPath, JSON.stringify(componentLookup, null, 2), "utf8");
     await writeFile(path.join(mirrorResult.destination, "README.md"), updatedInstructions, "utf8");
+
+    // Mirror assets folder if it exists
+    if (CONFIG.DOWNLOAD_ASSETS && assetPaths.size > 0) {
+      const assetsSourceDir = path.join(outputDir, 'assets');
+      const assetsMirrorDir = path.join(mirrorResult.destination, 'assets');
+      await cp(assetsSourceDir, assetsMirrorDir, { recursive: true });
+    }
   }
 }
 
 main().catch((error) => {
   console.error("❌ Error:", error.message || error);
   process.exit(1);
+}).then(() => {
+  // Force exit to prevent hanging due to HTTP server
+  process.exit(0);
 });

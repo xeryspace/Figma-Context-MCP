@@ -1,0 +1,242 @@
+{
+  "522:50558": {
+    "path": "Frame 2147237029",
+    "type": "FRAME",
+    "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": null
+  },
+  "522:50559": {
+    "path": "Frame 2147237029 > Component 5",
+    "type": "INSTANCE",
+    "styles": " [flex-col, center, 1440w, height: hug, overflow: auto, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029"
+  },
+  "I522:50559;289:6870": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913",
+    "type": "INSTANCE",
+    "styles": " [flex-col, center, stretch, width: fill, height: hug, gap: 16px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5"
+  },
+  "I522:50559;289:6870;241:6615": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917",
+    "type": "FRAME",
+    "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 178px, overflow: auto]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913"
+  },
+  "I522:50559;289:6870;241:6616": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917"
+  },
+  "I522:50559;289:6870;241:6617": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919"
+  },
+  "I522:50559;289:6870;241:6617;60:335": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu > dehaze",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu"
+  },
+  "I522:50559;289:6870;241:6617;60:330": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu > dehaze > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu > dehaze"
+  },
+  "I522:50559;289:6870;241:6617;60:334": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu > dehaze > dehaze",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Menu > dehaze"
+  },
+  "I522:50559;289:6870;241:6618": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919"
+  },
+  "I522:50559;289:6870;241:6618;25:166": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > smartgoods",
+    "type": "TEXT",
+    "styles": " [158w, h-align: scale, v-align: scale, overflow: auto, bg: #DE5A13, text: \"smartgoods\", Inter 700 27px, line-height: 1.45em, text-align: left, vertical-align: center, #DE5A13]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos"
+  },
+  "I522:50559;289:6870;241:6618;25:167": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > Union",
+    "type": "BOOLEAN_OPERATION",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos"
+  },
+  "I522:50559;289:6870;241:6618;25:168": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > Union > Vector",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > Union"
+  },
+  "I522:50559;289:6870;241:6618;25:169": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > Union > Vector",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236919 > Logos > Union"
+  },
+  "I522:50559;289:6870;244:6684": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043",
+    "type": "FRAME",
+    "styles": " [flex-col, width: fill, height: hug, flex-grow, gap: 10px, padding: 0px 24px, overflow: auto]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917"
+  },
+  "I522:50559;289:6870;241:6624": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, space-between, stretch, width: fill, 56h, gap: 24px, padding: 16px, overflow: auto, border: 1px #151515, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Symbol#309:0=[object Object], Show TextIconCombination#294:0=[object Object], Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043"
+  },
+  "I522:50559;289:6870;241:6624;294:6841": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > TextIconCombination",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography"
+  },
+  "I522:50559;289:6870;241:6624;294:6841;198:5593": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > TextIconCombination > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > TextIconCombination"
+  },
+  "I522:50559;289:6870;241:6624;294:6841;198:5593;2:8965": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > TextIconCombination > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"Steckdosen\", Inter 500 16px, line-height: 1.40em, text-align: left, vertical-align: top, #626262]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > TextIconCombination > Typography"
+  },
+  "I522:50559;289:6870;241:6624;60:440": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography"
+  },
+  "I522:50559;289:6870;241:6624;60:440;60:413": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu > search",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu"
+  },
+  "I522:50559;289:6870;241:6624;60:440;60:408": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu > search > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu > search"
+  },
+  "I522:50559;289:6870;241:6624;60:440;60:412": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu > search > search",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147237043 > Typography > Menu > search"
+  },
+  "I522:50559;289:6870;241:6619": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917"
+  },
+  "I522:50559;289:6870;244:6742": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918"
+  },
+  "I522:50559;289:6870;244:6742;262:7295": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > info",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu"
+  },
+  "I522:50559;289:6870;244:6742;262:7290": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > info > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > info"
+  },
+  "I522:50559;289:6870;244:6742;262:7294": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > info > info",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > info"
+  },
+  "I522:50559;289:6870;244:6733": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918"
+  },
+  "I522:50559;289:6870;244:6733;60:341": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > person",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu"
+  },
+  "I522:50559;289:6870;244:6733;60:336": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > person > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > person"
+  },
+  "I522:50559;289:6870;244:6733;60:340": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > person > person",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Menu > person"
+  },
+  "I522:50559;289:6870;241:6621": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, overflow: auto]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918"
+  },
+  "I522:50559;289:6870;241:6622": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915"
+  },
+  "I522:50559;289:6870;241:6622;60:393": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu > shopping_cart",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu"
+  },
+  "I522:50559;289:6870;241:6622;60:388": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu > shopping_cart > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu > shopping_cart"
+  },
+  "I522:50559;289:6870;241:6622;60:392": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu > shopping_cart > shopping_cart",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Menu > shopping_cart"
+  },
+  "I522:50559;289:6870;241:6623": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Numbers",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, 12w, 12h, min-w: 12px, min-h: 12px, gap: 12px, padding: 2px, overflow: auto, radius: 6px, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915"
+  },
+  "I522:50559;289:6870;241:6623;60:472": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Numbers > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Numbers"
+  },
+  "I522:50559;289:6870;241:6623;60:472;2:8895": {
+    "path": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Numbers > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #D9D9D9, text: \"0\", Inter 700 14px, line-height: 1.45em, text-align: center, vertical-align: center, #D9D9D9]",
+    "parent": "Frame 2147237029 > Component 5 > Frame 2147236913 > Frame 2147236917 > Frame 2147236918 > Frame 2147236915 > Numbers > Typography"
+  }
+}

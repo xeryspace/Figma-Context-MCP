@@ -1,0 +1,689 @@
+{
+  "metadata": {
+    "name": "Produkt Liste DT Container",
+    "lastModified": "2025-09-17T14:19:42Z",
+    "rootNodeId": "524:52174",
+    "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=524-52174&t=881GHX8GmV9kcRVQ-4",
+    "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
+    "extractionDate": "2025-09-17T15:38:24.526Z",
+    "enhancementDate": "2025-09-17T15:41:54.621Z",
+    "totalNodes": 47
+  },
+  "components": {
+    "524:52174": {
+      "name": "Produkt Liste DT Container",
+      "type": "INSTANCE",
+      "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Frame 2147237000#247:0=[object Object], Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1074px",
+        "height": "374px",
+        "gap": "24px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "boxShadow": "0px 6px 12px rgba(0, 0, 0, 0.03), 0px 4px 8px rgba(0, 0, 0, 0.02)"
+      }
+    },
+    "I524:52174;253:6201": {
+      "name": "Frame 2147236995",
+      "type": "FRAME",
+      "styles": " [flex-row, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "1042px",
+        "height": "342px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6202": {
+      "name": "Frame 2147236964",
+      "type": "FRAME",
+      "styles": " [flex-col, center, width: hug, height: hug, gap: 83px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "300px",
+        "height": "300px",
+        "gap": "83px"
+      }
+    },
+    "I524:52174;253:6204": {
+      "name": "Frame 2147237007",
+      "type": "FRAME",
+      "styles": " [flex-col, width: fill, height: hug, flex-grow, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "718px",
+        "height": "342px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6205": {
+      "name": "Frame 2147237042",
+      "type": "FRAME",
+      "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "718px",
+        "height": "141px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6206": {
+      "name": "Frame 2147237008",
+      "type": "FRAME",
+      "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "718px",
+        "height": "32px",
+        "gap": "16px"
+      }
+    },
+    "I524:52174;253:6207": {
+      "name": "Frame 2147237010",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "399px",
+        "height": "32px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6208": {
+      "name": "Frame 2147237005",
+      "type": "INSTANCE",
+      "styles": " [flex-col, center, width: hug, 32h, gap: 16px, padding: 16px, overflow: auto, border: 2px #DE5A13, radius: 8px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "178px",
+        "height": "32px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "borderRadius": "8px"
+      }
+    },
+    "I524:52174;253:6208;164:5439": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "146px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6208;164:5439;66:4399": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Versandkostenfrei\", Inter 700 16px, line-height: 1.45em, text-align: left, vertical-align: center, #151515]",
+      "css": {
+        "width": "146px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.45",
+        "textAlign": "left"
+      },
+      "content": "Versandkostenfrei"
+    },
+    "I524:52174;253:6209": {
+      "name": "Frame 2147237006",
+      "type": "INSTANCE",
+      "styles": " [flex-col, center, width: hug, 32h, gap: 16px, padding: 16px, overflow: auto, border: 2px #DE5A13, radius: 8px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "197px",
+        "height": "32px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "borderRadius": "8px"
+      }
+    },
+    "I524:52174;253:6209;164:5439": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "165px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6209;164:5439;66:4399": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"24 h Expressversand\", Inter 700 16px, line-height: 1.45em, text-align: left, vertical-align: center, #151515]",
+      "css": {
+        "width": "165px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.45",
+        "textAlign": "left"
+      },
+      "content": "24 h Expressversand"
+    },
+    "I524:52174;253:6210": {
+      "name": "Frame 2147237004",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "199px",
+        "height": "24px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6211": {
+      "name": "Frame 2147237000",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "36px",
+        "height": "24px"
+      }
+    },
+    "I524:52174;253:6211;148:5348": {
+      "name": "Frame 2147236999",
+      "type": "FRAME",
+      "styles": " [flex-row, center, 24w, 24h, gap: 10px, padding: 10px, overflow: auto, bg: #00A91C]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "24px",
+        "height": "24px",
+        "gap": "10px",
+        "paddingTop": "10px",
+        "paddingRight": "10px",
+        "paddingBottom": "10px",
+        "paddingLeft": "10px",
+        "backgroundColor": "rgb(0, 169, 28)"
+      }
+    },
+    "I524:52174;253:6211;148:5332": {
+      "name": "A",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"A\", Inter 700 24px, line-height: 1.40em, text-align: left, vertical-align: top, #FFFFFF]",
+      "css": {
+        "width": "18px",
+        "height": "17px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "A"
+    },
+    "I524:52174;253:6212": {
+      "name": "Produktdatenblatt",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"Produktdatenblatt\", Inter 500 16px, line-height: 1.45em, text-align: left, vertical-align: center, underline, #626262]",
+      "css": {
+        "width": "139px",
+        "height": "12px",
+        "backgroundColor": "rgb(98, 98, 98)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": "1.45",
+        "textAlign": "left"
+      },
+      "content": "Produktdatenblatt"
+    },
+    "I524:52174;253:6213": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, stretch, width: fill, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "718px",
+        "height": "85px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6213;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: fill, height: hug, flex-grow, overflow: auto, bg: #151515, text: \"Hager XEVA100 Kabelträger für Ladestation witty Fa...\", Inter 700 24px, line-height: 1.40em, text-align: left, vertical-align: top, letter-spacing: -0.12px, #151515]",
+      "css": {
+        "width": "718px",
+        "height": "85px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "letterSpacing": "-0.12px",
+        "textAlign": "left"
+      },
+      "content": "Hager XEVA100 Kabelträger für Ladestation witty Farbe anHager XEVA100 Kabelträger für Ladestation witty Farbe anthrazit...thrazit..."
+    },
+    "I524:52174;253:6214": {
+      "name": "Frame 2147237046",
+      "type": "FRAME",
+      "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "718px",
+        "height": "97px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6215": {
+      "name": "Frame 2147237048",
+      "type": "FRAME",
+      "styles": " [flex-col, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "72px",
+        "height": "24px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6216": {
+      "name": "Frame 2147237044",
+      "type": "FRAME",
+      "styles": " [flex-row, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "72px",
+        "height": "24px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6219": {
+      "name": "Frame 2147237041",
+      "type": "FRAME",
+      "styles": " [flex-col, width: hug, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "151px",
+        "height": "70px",
+        "gap": "16px"
+      }
+    },
+    "I524:52174;253:6221;67:4533": {
+      "name": "Frame 2147236921",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "120px",
+        "height": "24px"
+      }
+    },
+    "I524:52174;253:6220": {
+      "name": "Art.-Nr.: 14.9510W EAN: 4250047736479",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Art.-Nr.: 14.9510W\nEAN: 4250047736479\", Inter 500 14px, line-height: 1.40em, text-align: left, vertical-align: center, #151515]",
+      "css": {
+        "width": "151px",
+        "height": "30px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "Art.-Nr.: 14.9510W\nEAN: 4250047736479"
+    },
+    "I524:52174;253:6222": {
+      "name": "Frame 2147237045",
+      "type": "FRAME",
+      "styles": " [flex-col, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "241px",
+        "height": "97px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6223": {
+      "name": "Frame 2147236979",
+      "type": "FRAME",
+      "styles": " [flex-col, width: hug, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "241px",
+        "height": "97px",
+        "gap": "16px"
+      }
+    },
+    "I524:52174;253:6224": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "182px",
+        "height": "31px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6224;79:4735": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #DE5A13, text: \"68,40 €*\", Inter 700 42px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.84px, #DE5A13]",
+      "css": {
+        "width": "182px",
+        "height": "31px",
+        "backgroundColor": "rgb(222, 90, 19)",
+        "fontFamily": "Inter",
+        "fontSize": "42px",
+        "fontWeight": 700,
+        "lineHeight": "1.20",
+        "letterSpacing": "-0.84px",
+        "textAlign": "left"
+      },
+      "content": "68,40 €*"
+    },
+    "I524:52174;253:6225": {
+      "name": "inkl. 19% MwSt.,zzgl. Versandkosten",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"inkl. 19% MwSt.,zzgl. Versandkosten\", Inter 500 14px, line-height: 1.45em, text-align: center, vertical-align: center, letter-spacing: -0.07px, #626262]",
+      "css": {
+        "width": "241px",
+        "height": "10px",
+        "backgroundColor": "rgb(98, 98, 98)",
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "lineHeight": "1.45",
+        "letterSpacing": "-0.07px",
+        "textAlign": "center"
+      },
+      "content": "inkl. 19% MwSt.,zzgl. Versandkosten"
+    },
+    "I524:52174;253:6226": {
+      "name": "Frame 2147237001",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "149px",
+        "height": "24px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6227;44:127": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "109px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6227;44:127;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"2-6 Werktage\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+      "css": {
+        "width": "109px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "2-6 Werktage"
+    },
+    "I524:52174;253:6228": {
+      "name": "Frame 2147236988",
+      "type": "FRAME",
+      "styles": " [flex-row, flex-end, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "718px",
+        "height": "56px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6229": {
+      "name": "ButtonOrange",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, 56h, gap: 10px, padding: 0px 24px, overflow: auto, border: 2px #151515, radius: 16px, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "123px",
+        "height": "56px",
+        "gap": "10px",
+        "paddingRight": "24px",
+        "paddingLeft": "24px",
+        "borderRadius": "16px"
+      }
+    },
+    "I524:52174;253:6229;79:4743": {
+      "name": "Frame 2147236801",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "75px",
+        "height": "12px",
+        "gap": "24px"
+      }
+    },
+    "I524:52174;253:6229;79:4747": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "8px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6229;79:4747;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"-\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+      "css": {
+        "width": "8px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "-"
+    },
+    "I524:52174;253:6229;79:4749": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "8px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6229;79:4749;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"1\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+      "css": {
+        "width": "8px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "1"
+    },
+    "I524:52174;253:6229;79:4752": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "11px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6229;79:4752;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"+\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+      "css": {
+        "width": "11px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "+"
+    },
+    "I524:52174;253:6230": {
+      "name": "Frame 2147236924",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: fill, 56h, min-h: 56px, flex-grow, gap: 16px, padding: 16px, overflow: auto, bg: #DE5A13, radius: 16px, props: [Show Numbers#295:3=[object Object], Show icon left#181:0=[object Object], Text#30:1=[object Object], Icon#30:0=[object Object], Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "571px",
+        "height": "56px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "backgroundColor": "rgb(222, 90, 19)",
+        "borderRadius": "16px"
+      }
+    },
+    "I524:52174;253:6230;31:302": {
+      "name": "Menu",
+      "type": "INSTANCE",
+      "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]"
+    },
+    "I524:52174;253:6230;31:303": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "161px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I524:52174;253:6230;31:303;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"in den Warenkorb\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, text-transform: upper, #FFFFFF]",
+      "css": {
+        "width": "161px",
+        "height": "12px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "in den Warenkorb"
+    }
+  },
+  "colorPalette": [
+    "#00A91C",
+    "#151515",
+    "#626262",
+    "#DE5A13",
+    "#FFFFFF"
+  ],
+  "typography": [
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 16
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 24
+    },
+    {
+      "family": "Inter",
+      "weight": 500,
+      "size": 16
+    },
+    {
+      "family": "Inter",
+      "weight": 500,
+      "size": 14
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 42
+    }
+  ]
+}

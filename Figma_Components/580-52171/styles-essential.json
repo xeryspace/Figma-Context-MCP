@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "name": "Goodies",
+    "lastModified": "2025-09-17T14:19:42Z",
+    "rootNodeId": "580:52171",
+    "url": "https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=580-52171&t=881GHX8GmV9kcRVQ-4",
+    "fileKey": "TLO9Ja4fcaUF6Uvt4AE0gK",
+    "extractionDate": "2025-09-17T14:55:07.303Z",
+    "enhancementDate": "2025-09-17T14:56:08.394Z",
+    "totalNodes": 12
+  },
+  "components": {
+    "580:52171": {
+      "name": "Goodies",
+      "type": "INSTANCE",
+      "styles": " [flex-col, center, stretch, width: fill, height: hug, gap: 16px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Logos#208:0=[object Object], Show Arrow#220:14=[object Object], Show Text#213:0=[object Object], Show Video#216:7=[object Object], Show Checkbox#220:21=[object Object], Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1440px",
+        "height": "1251px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "borderRadius": "16px",
+        "boxShadow": "0px 6px 12px rgba(0, 0, 0, 0.03), 0px 4px 8px rgba(0, 0, 0, 0.02)"
+      }
+    },
+    "I580:52171;299:6910": {
+      "name": "Frame 2147237023",
+      "type": "FRAME",
+      "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1408px",
+        "height": "1147px",
+        "gap": "24px"
+      }
+    },
+    "I580:52171;299:6911": {
+      "name": "Frame 2147237025",
+      "type": "FRAME",
+      "styles": " [flex-row, center, stretch, width: fill, 64h, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "1408px",
+        "height": "64px",
+        "gap": "16px"
+      }
+    },
+    "I580:52171;299:6912": {
+      "name": "Frame 2147237030",
+      "type": "FRAME",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "243px",
+        "height": "35px",
+        "gap": "16px"
+      }
+    },
+    "I580:52171;299:6915": {
+      "name": "EcoBubble",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"EcoBubble \", Inter 700 48px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.96px, #FFFFFF]",
+      "css": {
+        "width": "243px",
+        "height": "35px",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontFamily": "Inter",
+        "fontSize": "48px",
+        "fontWeight": 700,
+        "lineHeight": "1.20",
+        "letterSpacing": "-0.96px",
+        "textAlign": "left"
+      },
+      "content": "EcoBubble "
+    },
+    "I580:52171;299:6941": {
+      "name": "HeaderImage",
+      "type": "INSTANCE",
+      "styles": " [1408w, 792h, overflow: hidden, overflow: auto, bg: #F4F4F4, radius: 16px, props: [Property 1=[object Object]]]",
+      "css": {
+        "width": "1408px",
+        "height": "792px",
+        "backgroundColor": "rgb(244, 244, 244)",
+        "borderRadius": "16px"
+      }
+    },
+    "I580:52171;302:7641": {
+      "name": "Group 8957",
+      "type": "GROUP",
+      "styles": " [1408w, 243h, overflow: auto]"
+    },
+    "I580:52171;299:6918": {
+      "name": "Frame 2147236811",
+      "type": "FRAME",
+      "styles": " [flex-col, 1408w, height: hug, gap: 16px, overflow: auto]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "column",
+        "width": "1408px",
+        "height": "243px",
+        "gap": "16px"
+      }
+    },
+    "I580:52171;299:6920": {
+      "name": "Selbstreinigung des Backofens: Alles, was Sie über die Pyrolyse wissen müssen Die Pyrolyse ist eine Funktion, die in vielen modernen Backöfen zu finden ist und als eine Art Selbstreinigungssystem dient. Aber was genau ist die Pyrolyse und wie funktioniert sie? Ich bin Robert vom Ersatzteilshop und ich werde Ihnen alles Wissenswerte über die Pyrolyse eines Backofens erklären. Was ist Pyrolyse und wie funktioniert sie? Die Pyrolyse ist ein Reinigungsprozess, bei dem der Backofen Temperaturen von bis zu 500 Grad erreicht. Dieses Verfahren dauert in der Regel zwischen ein und drei Stunden, abhängig von den Einstellungsmöglichkeiten des Geräts. Der Hauptzweck der Pyrolyse besteht darin, Fette und Verschmutzungen im Backraum bei diesen hohen Temperaturen zu verbrennen, bis sie zu Asche zerfallen. Anschließend muss der Benutzer lediglich den Boden des Ofens auswischen, um ein sauberes Gerät zu haben.",
+      "type": "TEXT",
+      "styles": " [stretch, width: fill, height: hug, overflow: auto, bg: #151515, text: \"Selbstreinigung des Backofens: Alles, was Sie über...\", Inter 500 16px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.32px, #151515]",
+      "css": {
+        "width": "1408px",
+        "height": "243px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 500,
+        "lineHeight": "1.20",
+        "letterSpacing": "-0.32px",
+        "textAlign": "left"
+      },
+      "content": "Selbstreinigung des Backofens: Alles, was Sie über die Pyrolyse wissen müssen\n\nDie Pyrolyse ist eine Funktion, die in vielen modernen Backöfen zu finden ist und als eine Art Selbstreinigungssystem dient. Aber was genau ist die Pyrolyse und wie funktioniert sie? Ich bin Robert vom Ersatzteilshop und ich werde Ihnen alles Wissenswerte über die Pyrolyse eines Backofens erklären.\n\nWas ist Pyrolyse und wie funktioniert sie?\n\nDie Pyrolyse ist ein Reinigungsprozess, bei dem der Backofen Temperaturen von bis zu 500 Grad erreicht. Dieses Verfahren dauert in der Regel zwischen ein und drei Stunden, abhängig von den Einstellungsmöglichkeiten des Geräts. Der Hauptzweck der Pyrolyse besteht darin, Fette und Verschmutzungen im Backraum bei diesen hohen Temperaturen zu verbrennen, bis sie zu Asche zerfallen. Anschließend muss der Benutzer lediglich den Boden des Ofens auswischen, um ein sauberes Gerät zu haben.\n"
+    },
+    "I580:52171;302:7642": {
+      "name": "Buttons",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, 342w, 56h, min-h: 56px, gap: 16px, padding: 16px, overflow: auto, border: 2px #151515, radius: 16px, props: [Icon#30:0=[object Object], Show icon left#181:0=[object Object], Text#30:1=[object Object], Show Numbers#295:3=[object Object], Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "342px",
+        "height": "56px",
+        "gap": "16px",
+        "paddingTop": "16px",
+        "paddingRight": "16px",
+        "paddingBottom": "16px",
+        "paddingLeft": "16px",
+        "borderRadius": "16px"
+      }
+    },
+    "I580:52171;302:7642;67:4568": {
+      "name": "Typography",
+      "type": "INSTANCE",
+      "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+      "css": {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "117px",
+        "height": "12px",
+        "gap": "10px"
+      }
+    },
+    "I580:52171;302:7642;67:4568;2:8965": {
+      "name": "Typography",
+      "type": "TEXT",
+      "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Mehr anzeigen\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+      "css": {
+        "width": "117px",
+        "height": "12px",
+        "backgroundColor": "rgb(21, 21, 21)",
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": 700,
+        "lineHeight": "1.40",
+        "textAlign": "left"
+      },
+      "content": "Mehr anzeigen"
+    }
+  },
+  "colorPalette": [
+    "#151515",
+    "#F4F4F4",
+    "#FFFFFF"
+  ],
+  "typography": [
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 48
+    },
+    {
+      "family": "Inter",
+      "weight": 500,
+      "size": 16
+    },
+    {
+      "family": "Inter",
+      "weight": 700,
+      "size": 16
+    }
+  ]
+}

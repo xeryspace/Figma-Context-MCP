@@ -1,0 +1,31 @@
+{
+  "totalAssets": 5,
+  "generatedAt": "2025-09-17T14:56:08.396Z",
+  "assets": {
+    "I580:52171;299:6941": {
+      "path": "./assets/headerimage.png",
+      "name": "headerimage",
+      "type": "INSTANCE"
+    },
+    "I580:52171;299:6941;196:5606": {
+      "path": "./assets/image_36.png",
+      "name": "image_36",
+      "type": "RECTANGLE"
+    },
+    "I580:52171;299:6941;197:5622": {
+      "path": "./assets/youtube_logo.png",
+      "name": "youtube_logo",
+      "type": "FRAME"
+    },
+    "I580:52171;299:6941;197:5623": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    },
+    "I580:52171;299:6941;197:5624": {
+      "path": "./assets/vector.svg",
+      "name": "vector",
+      "type": "VECTOR"
+    }
+  }
+}

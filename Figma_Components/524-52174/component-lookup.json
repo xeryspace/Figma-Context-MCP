@@ -1,0 +1,482 @@
+{
+  "524:52174": {
+    "path": "Produkt Liste DT Container",
+    "type": "INSTANCE",
+    "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Frame 2147237000#247:0=[object Object], Property 1=[object Object]]]",
+    "parent": null
+  },
+  "I524:52174;253:6201": {
+    "path": "Produkt Liste DT Container > Frame 2147236995",
+    "type": "FRAME",
+    "styles": " [flex-row, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container"
+  },
+  "I524:52174;253:6202": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147236964",
+    "type": "FRAME",
+    "styles": " [flex-col, center, width: hug, height: hug, gap: 83px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995"
+  },
+  "I524:52174;253:6203": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147236964 > image 26",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147236964"
+  },
+  "I524:52174;253:6204": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007",
+    "type": "FRAME",
+    "styles": " [flex-col, width: fill, height: hug, flex-grow, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995"
+  },
+  "I524:52174;253:6205": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042",
+    "type": "FRAME",
+    "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007"
+  },
+  "I524:52174;253:6206": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008",
+    "type": "FRAME",
+    "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042"
+  },
+  "I524:52174;253:6207": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008"
+  },
+  "I524:52174;253:6208": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237005",
+    "type": "INSTANCE",
+    "styles": " [flex-col, center, width: hug, 32h, gap: 16px, padding: 16px, overflow: auto, border: 2px #DE5A13, radius: 8px, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010"
+  },
+  "I524:52174;253:6208;164:5439": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237005 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237005"
+  },
+  "I524:52174;253:6208;164:5439;66:4399": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237005 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Versandkostenfrei\", Inter 700 16px, line-height: 1.45em, text-align: left, vertical-align: center, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237005 > Typography"
+  },
+  "I524:52174;253:6209": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237006",
+    "type": "INSTANCE",
+    "styles": " [flex-col, center, width: hug, 32h, gap: 16px, padding: 16px, overflow: auto, border: 2px #DE5A13, radius: 8px, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010"
+  },
+  "I524:52174;253:6209;164:5439": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237006 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237006"
+  },
+  "I524:52174;253:6209;164:5439;66:4399": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237006 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"24 h Expressversand\", Inter 700 16px, line-height: 1.45em, text-align: left, vertical-align: center, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237010 > Frame 2147237006 > Typography"
+  },
+  "I524:52174;253:6210": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008"
+  },
+  "I524:52174;253:6211": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004"
+  },
+  "I524:52174;253:6211;148:5348": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000 > Frame 2147236999",
+    "type": "FRAME",
+    "styles": " [flex-row, center, 24w, 24h, gap: 10px, padding: 10px, overflow: auto, bg: #00A91C]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000"
+  },
+  "I524:52174;253:6211;148:5332": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000 > Frame 2147236999 > A",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"A\", Inter 700 24px, line-height: 1.40em, text-align: left, vertical-align: top, #FFFFFF]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000 > Frame 2147236999"
+  },
+  "I524:52174;253:6211;148:5350": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000 > Vector 19",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Frame 2147237000"
+  },
+  "I524:52174;253:6212": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004 > Produktdatenblatt",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"Produktdatenblatt\", Inter 500 16px, line-height: 1.45em, text-align: left, vertical-align: center, underline, #626262]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Frame 2147237008 > Frame 2147237004"
+  },
+  "I524:52174;253:6213": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, stretch, width: fill, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042"
+  },
+  "I524:52174;253:6213;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: fill, height: hug, flex-grow, overflow: auto, bg: #151515, text: \"Hager XEVA100 Kabelträger für Ladestation witty Fa...\", Inter 700 24px, line-height: 1.40em, text-align: left, vertical-align: top, letter-spacing: -0.12px, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237042 > Typography"
+  },
+  "I524:52174;253:6214": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046",
+    "type": "FRAME",
+    "styles": " [flex-row, space-between, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007"
+  },
+  "I524:52174;253:6215": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048",
+    "type": "FRAME",
+    "styles": " [flex-col, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046"
+  },
+  "I524:52174;253:6216": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048 > Frame 2147237044",
+    "type": "FRAME",
+    "styles": " [flex-row, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048"
+  },
+  "I524:52174;253:6217": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048 > Frame 2147237044 > Group",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048 > Frame 2147237044"
+  },
+  "I524:52174;253:6218": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048 > Frame 2147237044 > Group > Vector",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237048 > Frame 2147237044 > Group"
+  },
+  "I524:52174;253:6219": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041",
+    "type": "FRAME",
+    "styles": " [flex-col, width: hug, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046"
+  },
+  "I524:52174;253:6221": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041"
+  },
+  "I524:52174;253:6221;67:4533": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten"
+  },
+  "I524:52174;253:6221;67:4529": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921"
+  },
+  "I524:52174;253:6221;67:4529;67:4512": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating"
+  },
+  "I524:52174;253:6221;67:4529;67:4507": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4529;67:4511": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > star",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4517": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921"
+  },
+  "I524:52174;253:6221;67:4517;67:4512": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating"
+  },
+  "I524:52174;253:6221;67:4517;67:4507": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4517;67:4511": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > star",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4525": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921"
+  },
+  "I524:52174;253:6221;67:4525;67:4512": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating"
+  },
+  "I524:52174;253:6221;67:4525;67:4507": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4525;67:4511": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > star",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4521": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921"
+  },
+  "I524:52174;253:6221;67:4521;67:4496": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star_half",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating"
+  },
+  "I524:52174;253:6221;67:4521;67:4491": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star_half > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star_half"
+  },
+  "I524:52174;253:6221;67:4521;67:4495": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star_half > star_half",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star_half"
+  },
+  "I524:52174;253:6221;67:4513": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921"
+  },
+  "I524:52174;253:6221;67:4513;67:4490": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating"
+  },
+  "I524:52174;253:6221;67:4513;67:4485": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6221;67:4513;67:4489": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star > star",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > FilterComponenten > Frame 2147236921 > Rating > star"
+  },
+  "I524:52174;253:6220": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041 > Art.-Nr.: 14.9510W EAN: 4250047736479",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Art.-Nr.: 14.9510W\nEAN: 4250047736479\", Inter 500 14px, line-height: 1.40em, text-align: left, vertical-align: center, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237041"
+  },
+  "I524:52174;253:6222": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045",
+    "type": "FRAME",
+    "styles": " [flex-col, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046"
+  },
+  "I524:52174;253:6223": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979",
+    "type": "FRAME",
+    "styles": " [flex-col, width: hug, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045"
+  },
+  "I524:52174;253:6224": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979"
+  },
+  "I524:52174;253:6224;79:4735": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #DE5A13, text: \"68,40 €*\", Inter 700 42px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.84px, #DE5A13]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Typography"
+  },
+  "I524:52174;253:6225": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > inkl. 19% MwSt.,zzgl. Versandkosten",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #626262, text: \"inkl. 19% MwSt.,zzgl. Versandkosten\", Inter 500 14px, line-height: 1.45em, text-align: center, vertical-align: center, letter-spacing: -0.07px, #626262]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979"
+  },
+  "I524:52174;253:6226": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979"
+  },
+  "I524:52174;253:6227": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001"
+  },
+  "I524:52174;253:6227;44:186": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit",
+    "type": "INSTANCE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie"
+  },
+  "I524:52174;253:6227;44:186;164:5466": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit > delivery_truck_speed",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit"
+  },
+  "I524:52174;253:6227;44:186;164:5461": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit > delivery_truck_speed > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit > delivery_truck_speed"
+  },
+  "I524:52174;253:6227;44:186;164:5465": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit > delivery_truck_speed > delivery_truck_speed",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Verfügbarkeit > delivery_truck_speed"
+  },
+  "I524:52174;253:6227;44:127": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie"
+  },
+  "I524:52174;253:6227;44:127;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"2-6 Werktage\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147237046 > Frame 2147237045 > Frame 2147236979 > Frame 2147237001 > Footer Kategorie > Typography"
+  },
+  "I524:52174;253:6228": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988",
+    "type": "FRAME",
+    "styles": " [flex-row, flex-end, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007"
+  },
+  "I524:52174;253:6229": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, 56h, gap: 10px, padding: 0px 24px, overflow: auto, border: 2px #151515, radius: 16px, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988"
+  },
+  "I524:52174;253:6229;79:4743": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange"
+  },
+  "I524:52174;253:6229;79:4747": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801"
+  },
+  "I524:52174;253:6229;79:4747;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"-\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography"
+  },
+  "I524:52174;253:6229;79:4749": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801"
+  },
+  "I524:52174;253:6229;79:4749;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"1\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography"
+  },
+  "I524:52174;253:6229;79:4752": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801"
+  },
+  "I524:52174;253:6229;79:4752;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"+\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > ButtonOrange > Frame 2147236801 > Typography"
+  },
+  "I524:52174;253:6230": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: fill, 56h, min-h: 56px, flex-grow, gap: 16px, padding: 16px, overflow: auto, bg: #DE5A13, radius: 16px, props: [Show Numbers#295:3=[object Object], Show icon left#181:0=[object Object], Text#30:1=[object Object], Icon#30:0=[object Object], Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988"
+  },
+  "I524:52174;253:6230;31:302": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu",
+    "type": "INSTANCE",
+    "styles": " [24w, 24h, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924"
+  },
+  "I524:52174;253:6230;31:302;151:5388": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu > add_shopping_cart",
+    "type": "GROUP",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu"
+  },
+  "I524:52174;253:6230;31:302;151:5383": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu > add_shopping_cart > Bounding box",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu > add_shopping_cart"
+  },
+  "I524:52174;253:6230;31:302;151:5387": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu > add_shopping_cart > add_shopping_cart",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Menu > add_shopping_cart"
+  },
+  "I524:52174;253:6230;31:303": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924"
+  },
+  "I524:52174;253:6230;31:303;2:8965": {
+    "path": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"in den Warenkorb\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, text-transform: upper, #FFFFFF]",
+    "parent": "Produkt Liste DT Container > Frame 2147236995 > Frame 2147237007 > Frame 2147236988 > Frame 2147236924 > Typography"
+  }
+}

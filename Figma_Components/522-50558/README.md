@@ -2,10 +2,10 @@
 
 This directory contains a deterministic snapshot of the Figma component tree.
 
-- **Source URL**: https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=497-22044&t=881GHX8GmV9kcRVQ-4
-- **Root Node**: 497:22044
+- **Source URL**: https://www.figma.com/design/TLO9Ja4fcaUF6Uvt4AE0gK/Smartgoods-Webseite?node-id=522-50558&t=881GHX8GmV9kcRVQ-4
+- **Root Node**: 522:50558
 - **Depth**: 20
-- **Generated**: 2025-09-17T14:08:43.389Z
+- **Generated**: 2025-09-17T14:22:07.793Z
 
 Files:
 - `component-tree.md`: Basic tree structure

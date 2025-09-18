@@ -1,0 +1,104 @@
+{
+  "580:52171": {
+    "path": "Goodies",
+    "type": "INSTANCE",
+    "styles": " [flex-col, center, stretch, width: fill, height: hug, gap: 16px, padding: 16px, overflow: auto, bg: #FFFFFF, radius: 16px, shadow: 0px 6px 12px rgba(0,0,0,0.03), 0px 4px 8px rgba(0,0,0,0.02), props: [Show Logos#208:0=[object Object], Show Arrow#220:14=[object Object], Show Text#213:0=[object Object], Show Video#216:7=[object Object], Show Checkbox#220:21=[object Object], Property 1=[object Object]]]",
+    "parent": null
+  },
+  "I580:52171;299:6910": {
+    "path": "Goodies > Frame 2147237023",
+    "type": "FRAME",
+    "styles": " [flex-col, stretch, width: fill, height: hug, gap: 24px, overflow: auto]",
+    "parent": "Goodies"
+  },
+  "I580:52171;299:6911": {
+    "path": "Goodies > Frame 2147237023 > Frame 2147237025",
+    "type": "FRAME",
+    "styles": " [flex-row, center, stretch, width: fill, 64h, gap: 16px, overflow: auto]",
+    "parent": "Goodies > Frame 2147237023"
+  },
+  "I580:52171;299:6912": {
+    "path": "Goodies > Frame 2147237023 > Frame 2147237025 > Frame 2147237030",
+    "type": "FRAME",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Goodies > Frame 2147237023 > Frame 2147237025"
+  },
+  "I580:52171;299:6915": {
+    "path": "Goodies > Frame 2147237023 > Frame 2147237025 > Frame 2147237030 > EcoBubble",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #FFFFFF, text: \"EcoBubble \", Inter 700 48px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.96px, #FFFFFF]",
+    "parent": "Goodies > Frame 2147237023 > Frame 2147237025 > Frame 2147237030"
+  },
+  "I580:52171;299:6941": {
+    "path": "Goodies > Frame 2147237023 > HeaderImage",
+    "type": "INSTANCE",
+    "styles": " [1408w, 792h, overflow: hidden, overflow: auto, bg: #F4F4F4, radius: 16px, props: [Property 1=[object Object]]]",
+    "parent": "Goodies > Frame 2147237023"
+  },
+  "I580:52171;299:6941;196:5606": {
+    "path": "Goodies > Frame 2147237023 > HeaderImage > image 36",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Goodies > Frame 2147237023 > HeaderImage"
+  },
+  "I580:52171;299:6941;197:5622": {
+    "path": "Goodies > Frame 2147237023 > HeaderImage > YouTube logo",
+    "type": "FRAME",
+    "styles": "",
+    "parent": "Goodies > Frame 2147237023 > HeaderImage"
+  },
+  "I580:52171;299:6941;197:5623": {
+    "path": "Goodies > Frame 2147237023 > HeaderImage > YouTube logo > Vector",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Goodies > Frame 2147237023 > HeaderImage > YouTube logo"
+  },
+  "I580:52171;299:6941;197:5624": {
+    "path": "Goodies > Frame 2147237023 > HeaderImage > YouTube logo > Vector",
+    "type": "VECTOR",
+    "styles": "",
+    "parent": "Goodies > Frame 2147237023 > HeaderImage > YouTube logo"
+  },
+  "I580:52171;302:7641": {
+    "path": "Goodies > Frame 2147237023 > Group 8957",
+    "type": "GROUP",
+    "styles": " [1408w, 243h, overflow: auto]",
+    "parent": "Goodies > Frame 2147237023"
+  },
+  "I580:52171;299:6918": {
+    "path": "Goodies > Frame 2147237023 > Group 8957 > Frame 2147236811",
+    "type": "FRAME",
+    "styles": " [flex-col, 1408w, height: hug, gap: 16px, overflow: auto]",
+    "parent": "Goodies > Frame 2147237023 > Group 8957"
+  },
+  "I580:52171;299:6920": {
+    "path": "Goodies > Frame 2147237023 > Group 8957 > Frame 2147236811 > Selbstreinigung des Backofens: Alles, was Sie über die Pyrolyse wissen müssen Die Pyrolyse ist eine Funktion, die in vielen modernen Backöfen zu finden ist und als eine Art Selbstreinigungssystem dient. Aber was genau ist die Pyrolyse und wie funktioniert sie? Ich bin Robert vom Ersatzteilshop und ich werde Ihnen alles Wissenswerte über die Pyrolyse eines Backofens erklären. Was ist Pyrolyse und wie funktioniert sie? Die Pyrolyse ist ein Reinigungsprozess, bei dem der Backofen Temperaturen von bis zu 500 Grad erreicht. Dieses Verfahren dauert in der Regel zwischen ein und drei Stunden, abhängig von den Einstellungsmöglichkeiten des Geräts. Der Hauptzweck der Pyrolyse besteht darin, Fette und Verschmutzungen im Backraum bei diesen hohen Temperaturen zu verbrennen, bis sie zu Asche zerfallen. Anschließend muss der Benutzer lediglich den Boden des Ofens auswischen, um ein sauberes Gerät zu haben.",
+    "type": "TEXT",
+    "styles": " [stretch, width: fill, height: hug, overflow: auto, bg: #151515, text: \"Selbstreinigung des Backofens: Alles, was Sie über...\", Inter 500 16px, line-height: 1.20em, text-align: left, vertical-align: center, letter-spacing: -0.32px, #151515]",
+    "parent": "Goodies > Frame 2147237023 > Group 8957 > Frame 2147236811"
+  },
+  "I580:52171;302:7639": {
+    "path": "Goodies > Frame 2147237023 > Group 8957 > Rectangle 521",
+    "type": "RECTANGLE",
+    "styles": "",
+    "parent": "Goodies > Frame 2147237023 > Group 8957"
+  },
+  "I580:52171;302:7642": {
+    "path": "Goodies > Buttons",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, 342w, 56h, min-h: 56px, gap: 16px, padding: 16px, overflow: auto, border: 2px #151515, radius: 16px, props: [Icon#30:0=[object Object], Show icon left#181:0=[object Object], Text#30:1=[object Object], Show Numbers#295:3=[object Object], Property 1=[object Object]]]",
+    "parent": "Goodies"
+  },
+  "I580:52171;302:7642;67:4568": {
+    "path": "Goodies > Buttons > Typography",
+    "type": "INSTANCE",
+    "styles": " [flex-row, center, width: hug, height: hug, gap: 10px, overflow: auto, props: [Property 1=[object Object]]]",
+    "parent": "Goodies > Buttons"
+  },
+  "I580:52171;302:7642;67:4568;2:8965": {
+    "path": "Goodies > Buttons > Typography > Typography",
+    "type": "TEXT",
+    "styles": " [width: hug, height: hug, overflow: auto, bg: #151515, text: \"Mehr anzeigen\", Inter 700 16px, line-height: 1.40em, text-align: left, vertical-align: top, #151515]",
+    "parent": "Goodies > Buttons > Typography"
+  }
+}
